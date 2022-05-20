@@ -4,4 +4,9 @@
 > 如下：
 > <!DOCTYPE html>
 > <html>
-> <>
+> <head>
+> <title>页面标题</title>
+> </head>
+> <body>
+> </body>
+> </html>
