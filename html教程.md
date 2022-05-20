@@ -1,12 +1,27 @@
 # html教程
 ## html简介
-> html有不同的版本，在建立html页面时，首先得生成一个html骨架。
-> 如下：
-> <!DOCTYPE html>
-> <html>
-> <head>
-> <title>页面标题</title>
-> </head>
-> <body>
-> </body>
-> </html>
+ html有不同的版本，在建立html页面时，首先得生成一个html骨架。
+如下：
+```
+<!-- 声明文档类型，声明类型根据html版本不同会有不同的写法，-->
+<!DOCTYPE html>
+<!-- html的根标签 -->
+<html lang="en">
+    <!-- head头部信息 -->
+<head>
+    <!-- 字符集编码 -->
+    <meta charset="UTF-8">
+    <!-- 设置页面的一些信息 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 视口 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 网页的标题 -->
+    <title>我的第一个页面</title>
+</head>
+<!-- body主体内容 -->
+<body>
+    
+</body>
+</html>
+
+```
