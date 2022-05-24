@@ -85,6 +85,38 @@
         _blank为打开新窗口
         download为下载属性，页面需要在服务器端打开才能看到此属性的效果。
 	    例:<a href="路径" target="_blank">内容</a>
+7.列表标签
+	有序列表
+	    <ol><li></li></ol>  通过type属性更改列表符号
+		列表符号 默认阿拉伯数字1  A  a  I i
+		start属性可以决定列表符号从第几个开始  值只能是数字
+		reversed 倒序
+	无序列表 
+		 <ul><li></li></ul>  通过type属性更改列表符号
+		 列表符号 
+			disc 默认的实心圆  
+			circle 空心圆 
+			square 实心方块  
+			none 没有
+	注意：ul只能使用ul的type值，ol只能使用ol的type值，li可以使用任何一个type值
+	自定义列表 
+		<dl><dt></dt><dd></dd></dl>
+		注意：一个自定义列表里有一个dt 可以同时存在多个dd，默认情况下dd是存在一定的缩进效果
+8.表格标签
+	table表格 tr代表行（几个tr代表几行）  td代表列（几个td代表几列）
+	表格的边框 border
+    表格的宽度 width
+    表格的高度 height
+    内容和边框之间的距离 cellpadding
+    单元格与单元格的间隙 cellspacing
+    设置表格的背景颜色 bgcolor
+    设置表格边框的颜色 bordercolor
+    设置表格的水平对齐方式 align="left 默认 center 居中 right 居右"
+	
+
+
+
+
 ```
 ## 路径
 ```
