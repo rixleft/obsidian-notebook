@@ -147,6 +147,7 @@
 		注意：一个表格中只有一个表头 一个表尾 可以同时存在多个表体，要用就一起使用，要么就不用。
 		在实际工作中一般这三个分组的顺序是 thead tfoot tbody 不影响最终显示效果，但是可以提高 
         用户体验，有利于SEO。
+        
     rules属性
 		可以给表格添加一些线条
 	     all 横向与竖向的线
@@ -158,6 +159,7 @@
         col与colgroup有相同的功能
         col是单标签  没有竖着的分割线  
         colgroup是双标签  有竖着的分割线
+        
 	表格的边框 border
     表格的宽度 width
     表格的高度 height
@@ -166,6 +168,8 @@
     设置表格的背景颜色 bgcolor
     设置表格边框的颜色 bordercolor
     设置表格的水平对齐方式 align="left 默认 center 居中 right 居右"
+
+
 9.表单标签
 	表单域 form
 		属性
@@ -178,8 +182,11 @@
             target 表单的提交方式  默认是在当前窗口 _self 可以在新的窗口提交 _blank
             
 		表单控件 input
+		
 			input可以设置的属性
+			
 				type input的类型
+				
 			        1：text  文本框  输入什么就显示什么
 			        2：password  密码框  不管输入的是什么都显示星号 *
 			        3：radio  单选按钮    单选时使用
@@ -200,6 +207,7 @@
 			        重置按钮：<input type="reset" value="重置">
 			        提交按钮：<input type="submit" value="提交">
 				   隐藏按钮: <input type="hidden" value="隐藏" name="qwe">
+				   
 		        name input的名称  需要就写不需要可以不用 但是radio这个标签必须要有name 一组 
                 保持一致，必然不能实现单选。
 		        checked 默认选中状态
@@ -211,13 +219,31 @@
 		        maxlength 最多可以输入的字符
 		        minlength 最少可以输入的字符
 		        size 文本框input的长度 （了解）
+		        
 		表单控件 select
 			multiple可以实现多选  默认只能选择一条
 			每一条选项都是一个option
+			
 		表单控件 textarea
 			textarea 多行文本框 用来写评价或发表言论
 			cols 宽度 一行显示的字符数，一个汉字代表两个字节，超过行限制字数则会显示滚动条。
 	        rows 高度 一共可以显示多少行，如果超过这个行数就会显示滚动条。
+
+
+10.布局标签
+	div 布局块 用来划分网页的各个模块
+	span 布局节点 用来修饰网页中的某一个小部分 不影响整体布局
+
+
+11其他标签
+	iframe 框架集  可以在一个页面中嵌套其他页面
+		通过src属性  如果你嵌套的页面比较大 可以设置宽度高度，如果没有设置那么会有左右上下滚动条
+		与超链接合作  超链接的target属性值是ifram的name名称
+		frameborder="no" 去掉默认的边框
+		scrolling="no" 无论是否能够放下所有内容都不会显示滚动条
+
+
+
 
 
 ```
