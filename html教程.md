@@ -149,9 +149,42 @@
     设置表格的水平对齐方式 align="left 默认 center 居中 right 居右"
 9.表单标签
 	表单域 form
-		表单控件
-
-
+		表单控件 input
+			input可以设置的属性
+				type input的类型
+			        1：text  文本框  输入什么就显示什么
+			        2：password  密码框  不管输入的是什么都显示星号 *
+			        3：radio  单选按钮    单选时使用
+			        4：checkbox  复选框   多选时使用
+			        5：file    文件域  可以上传文件 如图片文件
+			        6：image   图片域  可以当做提交按钮使用
+			        7：button  普通按钮  无效果
+			        8：reset   重置按钮  将所填内容恢复到默认状态
+			        9：submit  提交按钮  上传信息到指定地址
+			        10：hidden  隐藏按钮  允许Web开发者存放一些用户不可见、不可改的数据
+				    用户名：<input type="text"><br>
+			        密码框：<input type="password"><br>
+			        单选按钮：<input type="radio"><br>
+			        复选框：<input type="checkbox"><br>
+			        文件域：<input type="file"><br>
+			        图像域：<input type="image" src="./bg.png"><br>
+			        普通按钮：<input type="button" value="按钮">
+			        重置按钮：<input type="reset" value="重置">
+			        提交按钮：<input type="submit" value="提交">
+				   隐藏按钮: <input type="hidden" value="隐藏" name="qwe">
+		        name input的名称  需要就写不需要可以不用 但是radio这个标签必须要有name 一组 
+                保持一致，必然不能实现单选
+        checked 默认选中状态
+        disabled 禁用
+        multiple 实现选择多个
+        value  默认值  是值这个input的值 他是数据 是可以提交
+        placeholder 提示信息  这个只能对用户起到提示的效果， 不是input的值 不可以提交（注意：html5新增属性，低版本浏览器不支持）
+        maxlength 最多可以输入的字符
+        minlength 最少可以输入的字符
+        size 文本框input的长度 （了解）
+			
+		表单控件 select
+		表单控件 textarea
 
 
 ```
