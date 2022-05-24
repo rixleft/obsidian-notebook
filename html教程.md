@@ -103,7 +103,42 @@
 		<dl><dt></dt><dd></dd></dl>
 		注意：一个自定义列表里有一个dt 可以同时存在多个dd，默认情况下dd是存在一定的缩进效果
 8.表格标签
-	table表格 tr代表行（几个tr代表几行）  td代表列（几个td代表几列）
+	table表格 
+	tr代表行（几个tr代表几行）  
+		height 高度
+        align 代表的是这一行内容的水平对齐方式 left 默认 center 居中 right 居右
+        bgcolor 这个一行的背景颜色
+        valign 这一行内容的垂直对齐方式 top 上 middle 默认值  bottom 下
+	td代表列（几个td代表几列）
+		width 宽度
+        height 高度
+        bgcolor 背景颜色  这个单元格的背景颜色
+        align 水平对齐方式 这个单元格内容的水平对齐方式 left 默认 center 居中 right 居右
+        valign 垂直对齐方式 这个单元格内容的垂直对齐方式 top 上 middle 默认居中  bottom 下
+        行合并 rowspan  行不同就是行合并  纵向合并
+        列合并 colspan  列不同就是列合并  横向合并
+    表格的标题 caption
+	    <caption>表格的标题</caption>
+	    无论写在table的上边还是下边都会显示在表格上边居中的位置，写多个这样的标签就会显示多少次， 
+        默认是处在表格的居中位置。
+    表格的列标题 th
+	    th是表格的列标题 默认是加粗的效果 默认是水平垂直居中。
+	表格的数据行分组
+		可以分成 thead 表头  tbody 表体  tfoot 表尾
+		注意：一个表格中只有一个表头 一个表尾 可以同时存在多个表体，要用就一起使用，要么就不用。
+		在实际工作中一般这三个分组的顺序是 thead tfoot tbody 不影响最终显示效果，但是可以提高 
+        用户体验，有利于SEO。
+    rules属性
+		可以给表格添加一些线条
+	     all 横向与竖向的线
+         cols 竖向的线
+         rows 横向的线
+         none 没有
+         groups 组分割线  一般与col 或者 colgroup 连用
+        注意：如果使用组分割线进行表格的合并，那么表格的下面td里就不要使用其他的合并
+        col与colgroup有相同的功能
+        col是单标签  没有竖着的分割线  
+        colgroup是双标签  有竖着的分割线
 	表格的边框 border
     表格的宽度 width
     表格的高度 height
@@ -112,7 +147,9 @@
     设置表格的背景颜色 bgcolor
     设置表格边框的颜色 bordercolor
     设置表格的水平对齐方式 align="left 默认 center 居中 right 居右"
-	
+9.表单标签
+	表单域 form
+		表单控件
 
 
 
