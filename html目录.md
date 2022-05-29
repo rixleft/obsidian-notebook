@@ -184,44 +184,44 @@ table表格
     设置表格边框的颜色 bordercolor
     设置表格的水平对齐方式 align="left 默认 center 居中 right 居右"
 
-
-9.表单标签
-	表单域 form
-		属性
-			name  表单名称
-	        action 表单的提交地址
-	        method 表单的提交方式和方法
-		        值 get  默认是get，从服务器上获取信息，get会将一些信息放到地址栏中，因此安全性 
-               低，但效率高，做查询数据时使用
-                post  向服务器上传，安全性高，效率低，一些密码安全等级比较高的用post
-            target 表单的提交方式  默认是在当前窗口 _self 可以在新的窗口提交 _blank
+```
+### 9.[[表单标签]]
+```
+表单域 form
+	属性
+		name  表单名称
+	    action 表单的提交地址
+	    method 表单的提交方式和方法
+		值 get  默认是get，从服务器上获取信息，get会将一些信息放到地址栏中，因此安全性低，但效率高，做查询数据时使用
+        post  向服务器上传，安全性高，效率低，一些密码安全等级比较高的用post
+        target 表单的提交方式  默认是在当前窗口 _self 可以在新的窗口提交 _blank
             
-		表单控件 input
+	表单控件 input
 		
-			input可以设置的属性
+		input可以设置的属性
 			
-				type input的类型
+			type input的类型
 				
-			        1：text  文本框  输入什么就显示什么
-			        2：password  密码框  不管输入的是什么都显示星号 *
-			        3：radio  单选按钮    单选时使用
-			        4：checkbox  复选框   多选时使用
-			        5：file    文件域  可以上传文件 如图片文件
-			        6：image   图片域  可以当做提交按钮使用
-			        7：button  普通按钮  无效果
-			        8：reset   重置按钮  将所填内容恢复到默认状态
-			        9：submit  提交按钮  上传信息到指定地址
-			        10：hidden  隐藏按钮  允许Web开发者存放一些用户不可见、不可改的数据
-				    用户名：<input type="text"><br>
-			        密码框：<input type="password"><br>
-			        单选按钮：<input type="radio"><br>
-			        复选框：<input type="checkbox"><br>
-			        文件域：<input type="file"><br>
-			        图像域：<input type="image" src="./bg.png"><br>
-			        普通按钮：<input type="button" value="按钮">
-			        重置按钮：<input type="reset" value="重置">
-			        提交按钮：<input type="submit" value="提交">
-				   隐藏按钮: <input type="hidden" value="隐藏" name="qwe">
+			    1：text  文本框  输入什么就显示什么
+			    2：password  密码框  不管输入的是什么都显示星号 *
+			    3：radio  单选按钮    单选时使用
+			    4：checkbox  复选框   多选时使用
+			    5：file    文件域  可以上传文件 如图片文件
+			    6：image   图片域  可以当做提交按钮使用
+			    7：button  普通按钮  无效果
+			    8：reset   重置按钮  将所填内容恢复到默认状态
+			    9：submit  提交按钮  上传信息到指定地址
+			    10：hidden  隐藏按钮  允许Web开发者存放一些用户不可见、不可改的数据
+				用户名：<input type="text"><br>
+			    密码框：<input type="password"><br>
+			    单选按钮：<input type="radio"><br>
+			    复选框：<input type="checkbox"><br>
+			    文件域：<input type="file"><br>
+			    图像域：<input type="image" src="./bg.png"><br>
+			    普通按钮：<input type="button" value="按钮">
+			    重置按钮：<input type="reset" value="重置">
+			    提交按钮：<input type="submit" value="提交">
+				隐藏按钮: <input type="hidden" value="隐藏" name="qwe">
 				   
 		        name input的名称  需要就写不需要可以不用 但是radio这个标签必须要有name 一组 
                 保持一致，必然不能实现单选。
@@ -235,11 +235,11 @@ table表格
 		        minlength 最少可以输入的字符
 		        size 文本框input的长度 （了解）
 		        
-		表单控件 select
+	表单控件 select
 			multiple可以实现多选  默认只能选择一条
 			每一条选项都是一个option
 			
-		表单控件 textarea
+	表单控件 textarea
 			textarea 多行文本框 用来写评价或发表言论
 			cols 宽度 一行显示的字符数，一个汉字代表两个字节，超过行限制字数则会显示滚动条。
 	        rows 高度 一共可以显示多少行，如果超过这个行数就会显示滚动条。
