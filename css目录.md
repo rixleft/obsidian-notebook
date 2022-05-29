@@ -18,14 +18,17 @@ css：层叠样式表
 ### 2.[[标签选择器]]
 可以用来统一网页中==某一类==标签的样式,必须是css中规定好的标签。如
 ```
+标题标签
 h1 {
     color: red;
 }
 
+段落标签
 p {
     font-size: 50px;
 }
 
+超链接
 a {
     color: black;
 }
@@ -36,22 +39,26 @@ a {
 .nav {
         color: red;
 }
-
-	ID选择器：需要在标签中引入才能生效  标签添加 id="id名称"
-		#top {
-            color: red;
-        }
-
-		选择器可以并起来一起写，如：
-		h1,p,h2 {
-		        color: purple;
+```
+### 4.[[ID选择器]]
+需要在标签中引入才能生效  标签添加 id="id名称"
+```
+#top {
+        color: red;
+    }
+```
+==选择器可以并起来一起写，多个选择器合并设置同一属性。如：==
+```
+h1,p,h2 {
+		color: purple;
 		 }
-		 .link,.main,.footer {
-					          color: yellow;
+		 
+.link,.main,.footer {
+					    color: yellow;
 	    } 
-		多个选择器合并设置同一属性。
-		
-		
+```
+
+```	
 2.设置颜色
 	1.直接写英文单词：color：red。color：yellow。 color：pink。
 	2.十六进制数: color:#ff0000  0-9 a-f 任意六个都可以组成一个颜色
@@ -62,7 +69,23 @@ a {
 
 注意：工作中常用十六进制数，4-6的颜色设置方式低版本浏览器不支持 因为是css3.0新增属性值
 
+h1 {
 
+            color: red;
+
+        }
+
+        h1 {
+
+            color: rgb(255, 0, 0);
+
+        }
+
+        h1 {
+
+            color: #ff0000;
+
+        }
 ```
 
 color
