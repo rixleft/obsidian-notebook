@@ -115,11 +115,14 @@ h1,p,h2 {
 ## 3.[[文字]]
 ```
 1. 文字的颜色 color
-2. 文字的大小 font-size
+
+3. 文字的大小 font-size
 	(常用px像素，em rem 移动端使用，pt 磅 打印的字体大小）
+	
 3. 文字的字体 font-family
 	Arial  'Times New Roman'  "楷体"
 	单个英文单词不用加引号，多个英文单词一般加单引号，汉语一般加双引号。
+	
 4. 设置文字是否加粗 font-weight
 	bold加粗
 	bolder更粗（浏览器没能显示出来
@@ -128,20 +131,55 @@ h1,p,h2 {
 	但一般更习惯用像素表示，有100-900九个等级
 	100-300是细体   400-500 正常  600-900 加粗
 	细体各级别在浏览器显示相同，正常和加粗同上。
+	
 5. 设置文字是否倾斜 font-style
-2. 行间距 行高 line-height
-3. 水平对齐方式：text-align
-4. 词间距：word-spacing
-5. 字符间距：letter-spacing
-6. 文本修饰：text-decoration
-7. 首行缩进：text-indent
-8. 英文字母大小写 text-transform
-9. 垂直对齐方式：vertical-align
-10. 将小写的英文字母变成小型的大写字母 font-variant
+	italic 倾斜 
+	oblique 倾斜度大一些（浏览器没能显示出来） 
+	normal 不倾斜
+	
+6. 行间距 行高 line-height
+	如果值添加单位 代表的是具体行高的数值  
+	如果没有添加单位代表的是文字大小的倍数
+
+7. 水平对齐方式：text-align
+	left 居左
+	center 居中
+	right 居右
+	
+8. 词间距：word-spacing
+	
+9. 字符间距：letter-spacing
+	
+10. 文本修饰：text-decoration
+	none没有线 
+	underline 下划线 
+	overline 上划线 
+	line-through删除线  
+	可以三条线同时出现
+11. 首行缩进：text-indent
+	只针对第一行生效，首行缩进两个字为2em，值的单位可以用px 但不建议使用，一旦文字大小发生改变我们就需要改变值，如果用2em 不管文字大小怎么变都是两个字。
+	
+12. 英文字母大小写 text-transform
+	uppercase 大写 
+	lowercase小写  
+	capitalize首字母大写
+	
+13. 垂直对齐方式：vertical-align
+	但是目前只有img支持   
+	top 上 
+	middle 中  
+	bottom 下 
+	baseline 基线默认值
+	
+14. 将小写的英文字母变成小型的大写字母 font-variant
+	small-caps 小型的大写字母
 
 ```
-color
-text-align
-text-decoration
-text-indent
-line-height
+### 4.盒子模型
+盒子模型是网页布局的基础，
+盒子模型的组成：
+margin  
+
+border 
+padding  
+content(width/height)
