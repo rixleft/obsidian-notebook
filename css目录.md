@@ -224,6 +224,7 @@ h1,p,h2 {
     margin可以设置负值  在盒子的外部  margin区域不会出现自身的背景颜色
 ![[margin2.png]]
 border是一个复合属性border:边框粗细（border-width） 边框的线型（border-style） 边框的颜色（border-color）
+可以单独设置某一个方向 border-left、right、top、bottom
 ![[border3.png]]
  ==线型：常用
  solid 实线  
@@ -231,6 +232,9 @@ border是一个复合属性border:边框粗细（border-width） 边框的线型
  dotted 点状线  
  double双实线 
  none没有线==
+
+可以利用border制作[[三角形]]
+
  
 ![[border2.png]]
 
