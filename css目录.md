@@ -21,11 +21,27 @@ css：层叠样式表
 外部样式表（工作中常用）
     写在html的外部 xxx.css 那个页面需要这个样式就在head标签内引入这个样式表即可.
     代码冗余度低 复用性高 有利于后期的维护
-    <link rel="stylesheet" href="./wai.css">
-        <style>
-        @import url(./wai.css);
+    
+    第一种引入方式
+	外链式 <link rel="stylesheet" href="路径">  工作中常用。
+	注意：rel="stylesheet" 必须要有 作用是建立文档关联性 如果没有也会导致外部样式表引入不进来。
+
+    第二种引入方式
+    <style>
+        @import url(路径);
+    </style>
+     注意：如果你使用导入式引入外部样式表的同时还添加了内部样式,此时注意导入式的样式表一定是style里面的第一句话，要不然不生效
+
+link与@import的区别：
+    1老祖宗不同：link是html提供的一种引入方式，不光可以引入css文件还可以引入其他文件，@import是css提供的一种引入方式，只能引入css文件
+    2加载顺序不同：link与html同时被加载 @import是当所有的html加载完成之后再加载对应的css
+    3兼容性不同：link没有版本要求 @import必须在ie6以上才能支持
+    4控制dom：link支持 @import不支持
+    
 内部样式表，如果你的页面长度相对比较小 可以使用内部样式表或外部样式表，在工作中常用外部样式表实现结构表现相分离
 ```
+==样式表的优先级：行内样式表的优先级最高 内部和外部样式表与书写顺序有关 采用就近原则，一个页面可以同时引入多个外部样式表,当发生冲突时采用就近原则。==
+
 ## 1.选择器
 ### 1.通配符选择器
 写在所有样式的最前边，如
@@ -198,13 +214,34 @@ h1,p,h2 {
 ### 4.盒子模型
 盒子模型是网页布局的基础，
 盒子模型的组成：
-![[盒子模型.png]]
-margin  
+![[盒子模型.png]] 
+ margin:外边距 外填充 外补丁
+        一个值 代表上下左右都是这个值
+        两个值 第一个代表上下 第二个代表左右
+        三个值 第一个代表上  第二个代表左右 第三个代表下
+        四个值 第一个代表上  第二个代表右   第三个代表下   第四个代表左
+    可以单独设置某一个方向 margin-left、right、top、bottom
+    margin可以设置负值  在盒子的外部  margin区域不会出现自身的背景颜色
 ![[margin2.png]]
-border 
+border是一个复合属性border:边框粗细（border-width） 边框的线型（border-style） 边框的颜色（border-color）
+![[border3.png]]
+ ==线型：常用
+ solid 实线  
+ dashed 虚线  
+ dotted 点状线  
+ double双实线 
+ none没有线==
+ 
 ![[border2.png]]
+
 ![[border1.png]]
-padding  
+ padding:内边距  内填充  内补丁
+        一个值 代表上下左右都是这个值
+        两个值 第一个代表上下 第二个代表左右
+        三个值 第一个代表上  第二个代表左右 第三个代表下
+        四个值 第一个代表上  第二个代表右   第三个代表下   第四个代表左
+     可以单独设置某一个方向 padding-left、right、top、bottom
+    padding 不可以设置负值  在盒子的内部  padding区域会出现自身的背景颜色
 ![[padding1.png]]
 
 ![[padding2.png]]
