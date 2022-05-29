@@ -131,10 +131,9 @@
 		<dl><dt></dt><dd></dd></dl>
 		注意：一个自定义列表里有一个dt 可以同时存在多个dd，默认情况下dd是存在一定的缩进效果
 ```
+### 8.[[表格标签]]
 ```
-
-
-	table表格 
+table表格 
 	tr代表行（几个tr代表几行）  
 		height 高度
         align 代表的是这一行内容的水平对齐方式 left 默认 center 居中 right 居右
