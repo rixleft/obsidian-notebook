@@ -211,10 +211,10 @@ h1,p,h2 {
 	small-caps 小型的大写字母
 
 ```
-### 4.盒子模型
+### 4.[[盒子模型]]
 盒子模型是网页布局的基础，
 盒子模型的组成：
-![[盒子模型.png]] 
+![[image/盒子模型.png]] 
  margin:外边距 外填充 外补丁
         一个值 代表上下左右都是这个值
         两个值 第一个代表上下 第二个代表左右
@@ -253,4 +253,14 @@ content(width/height)
 
  标准盒（外扩盒）计算方式=margin+padding+border+content（width/height）
 怪异盒（内缩盒）计算方式=margin+content（width/height）
-标准盒与怪异盒转换的属性 box-sizing：border-box怪异盒 默认是标准 content-box
+标准盒与怪异盒转换的属性 box-sizing：border-box怪异盒 默认是标准 content-box 标准盒
+
+盒子的百分比值 
+        宽度的百分比是父元素宽度的百分比值
+        高度的百分比是父元素高度的百分比值
+        padding的百分比值是父元素宽度的百分比值
+        margin 的百分比值是父元素宽度的百分比值
+        border 不支持写百分比值
+
+margin的塌陷问题
+当盒子的上下外边距重叠是，会选择最大的那一侧
