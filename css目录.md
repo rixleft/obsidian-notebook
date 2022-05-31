@@ -250,3 +250,7 @@ border是一个复合属性border:边框粗细（border-width） 边框的线型
 
 ![[padding2.png]]
 content(width/height)
+
+ 标准盒（外扩盒）计算方式=margin+padding+border+content（width/height）
+怪异盒（内缩盒）计算方式=margin+content（width/height）
+标准盒与怪异盒转换的属性 box-sizing：border-box怪异盒 默认是标准 content-box
