@@ -43,19 +43,45 @@
 
  语法规则：代码使用小写字母，起名使用驼峰命名法，由多个单词组成时，可写下划线，introduce_myself。
 ## 起名
-```
+
 起名规则规范
-    使用因为字母区分大小写，可以使用数字下划线，中划线，但是不能以数字开头，也不可以使用汉字，最好不要使用关键字(html标签)。
-```
+    使用因为字母区分大小写，可以使用数字下划线，中划线，但是不能以数字开头，也不可以使用汉字，最好不要使用关键字，如(html标签)。
 
 ### 1.[[标题标签]]
-```
-     <h1>一级标题</h1>
-     <h2>二级标题</h2>
-     <h3>三级标题</h3>
-     <h4>四级标题</h4>
-     <h5>五级标题</h5>
-     <h6>六级标题</h6>
+```html
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>标题标签</title>
+
+</head>
+
+<body>
+
+    <h1>一级标题</h1>
+
+    <h2>二级标题</h2>
+
+    <h3>三级标题</h3>
+
+    <h4>四级标题</h4>
+
+    <h5>五级标题</h5>
+
+    <h6>六级标题</h6>
+
+</body>
+
+</html>
 
 ```
 
