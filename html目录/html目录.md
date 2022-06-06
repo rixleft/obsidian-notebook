@@ -26,24 +26,22 @@
 
 ```
 ## 属性
-~~~
 属性分类：
-     必有属性  src alt
-     可选属性  width  height
-     通用属性  title  id class style
-     事件属性  js相关的事件
-~~~
+     必有属性  如图片的必有属性`<img src="地址">  <alt>`
+     可选属性  `<width>  <height>`
+     通用属性  `<title>  <id> <class> <style>`
+     事件属性  java script 相关的事件
+
 ## html标签 
 
-```
- html标签是由尖括号包围的关键词，比如<html>，<body>
+
+ html标签是由尖括号包围的关键词，比如`<html>，<body>`
  
- html标签通常是成对出现的，比如<b>，</b>.<div>，</div>.
+ html标签通常是成对出现的，比如`<b>，</b>.<div>，</div>`.
  
  标签对中的第一个标签是开始标签，第二个标签是结束标签。
 
  语法规则：代码使用小写字母，起名使用驼峰命名法，由多个单词组成时，可写下划线，introduce_myself。
-```
 ## 起名
 ```
 起名规则规范
