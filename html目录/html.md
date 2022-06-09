@@ -32,7 +32,7 @@
      通用属性  `<title>  <id> <class> <style>`
      事件属性  java script 相关的事件
 
-## html标签 
+## [[html标签]] 
 
  在html中，标签通常又被称作元素，它是由尖括号包围的关键词，比如`<html>，<body>`
  
