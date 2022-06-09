@@ -34,58 +34,45 @@
 
 ## html标签 
 
- html标签是由尖括号包围的关键词，比如`<html>，<body>`
+ 在html中，标签通常又被称作元素，它是由尖括号包围的关键词，比如`<html>，<body>`
  
- html标签通常是成对出现的，比如`<b>，</b>.<div>，</div>`.
+ html标签通常是成对出现的，比如`<b>，</b>.<div>，</div>.`
  
  标签对中的第一个标签是开始标签，第二个标签是结束标签。
 
  语法规则：代码使用小写字母，起名使用驼峰命名法，由多个单词组成时，可写下划线，introduce_myself。
+ HTML元素根据
  
 ## 起名
 
 起名规则规范
     使用因为字母区分大小写，可以使用数字下划线，中划线，但是不能以数字开头，也不可以使用汉字，最好不要使用关键字，如(html标签)。
 
-### 1.标题标签
+### 1.[[标题标签]]
+标题标签是块级元素，一般独占一行，常用于模块部分的标题字段。
 ```html
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>标题标签</title>
-
 </head>
-
 <body>
-
     <h1>一级标题</h1>
-
     <h2>二级标题</h2>
-
     <h3>三级标题</h3>
-
     <h4>四级标题</h4>
-
     <h5>五级标题</h5>
-
     <h6>六级标题</h6>
-
 </body>
-
 </html>
 
 ```
 
 ### 2.[[段落标签]]
+
 ```
      <p>段落与段落之间会空一行文字的距离</p>
 ```
