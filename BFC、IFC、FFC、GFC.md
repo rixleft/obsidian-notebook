@@ -19,6 +19,35 @@ BFC（Block Formatting Context）叫做“块级格式化上下文”。BFC的�
 
 6.计算BFC的高度时，浮动元素也參与计算。
 
+```html
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            background: deepskyblue;
+        }
+        .main div {
+            height: 100px;
+            width: 100px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
+```
+当盒子内嵌套盒子时，子盒子浮动导致父盒子无法撑开，渲染结果为页面一片空白，而让`class=main`的父盒子div形成BFC后，给.main添加绝对定位
+
 触发BFC的条件。
 
 1.根元素。
@@ -30,6 +59,8 @@ BFC（Block Formatting Context）叫做“块级格式化上下文”。BFC的�
 4.display为inline-block。table-cell，table-caption。flex；
 
 5.overflow为hidden scroll auto。
+
+
 
 ## IFC（内联格式化上下文）
 
