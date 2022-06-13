@@ -46,9 +46,18 @@ BFC（Block Formatting Context）叫做“块级格式化上下文”。BFC的�
 </body>
 </html>
 ```
-当盒子内嵌套盒子时，子盒子浮动导致父盒子无法撑开，渲染结果为页面一片空白，而让`class=main`的父盒子div形成BFC后，给.main添加绝对定位
+当盒子内嵌套盒子时，子盒子浮动导致父盒子无法撑开，渲染结果为页面一片空白，而让`class=main`的父盒子div形成BFC后（给.main添加绝对定位）。
+```html
+	<style>
+		.main {
+			  background: deepskyblue;
+			  position: absolute;  /* 触发BFC */
+		}
+	</style>
+```
+父元素就被撑开了。并且position设置为absolute的块级元素的width是不会占满整行，如果不设置宽度并且没有子元素，其宽度为0，如果有子元素，其宽度由子元素撑开。
 
-触发BFC的条件。
+==**触发BFC的条件。**==
 
 1.根元素。
 
@@ -56,13 +65,24 @@ BFC（Block Formatting Context）叫做“块级格式化上下文”。BFC的�
 
 3.position为absolute或fixed；
 
-4.display为inline-block。table-cell，table-caption。flex；
+4.display为inline-block。table-cell，table-caption，table-caption，flex；
 
 5.overflow为hidden scroll auto。
 
+6.匿名表格单元格元素（ HTML 中的 table、row、thead、tbody、tfoot 或者 display 为table、table-row、table-row-group、table-header-group、table-footer-group）。
 
+7.网格元素（display 为 grid 或者 inline-grid 元素的直接子元素）
+
+8.多列容器（元素的 column 或者 column-width 不为 auto，包括 column-count 为 1）
 
 ## IFC（内联格式化上下文）
+IFC（Inline Formatting Contexts）直译为"内联格式化上下文"，IFC 的 line box（框）高度由其包含行内元素中最高的实际高度计算而来（不受到竖直方向的 padding/margin 影响)。
+
+符合以下条件即会生成一个IFC
+
+- 块级元素中仅包含内联级别元素
+
+形成条件非常简单，需要注意的是当IFC中有块级元素插入时，会产生两个匿名块将父元素分割开来，产生两个IFC。
 
 ## FFC（弹性格式化上下文）
 ## GFC （网格格式化上下文）
