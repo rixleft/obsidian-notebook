@@ -24,6 +24,43 @@
 	}
 ```
 
+### 例子
+[[动态伪类选择器]]和相邻兄弟选择器一起实现下列效果。
+```html
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            outline: none;
+            float: left;
+            height: 50px;
+            box-sizing: border-box;
+            border: 1px solid rgb(255, 230, 2);
+        }
+        .btn {
+            border-left: none;
+        }
+        input:focus {
+            border: 1px solid red;
+        }
+        input:focus+input {
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <input type="text">
+    <input type="button" value="搜索" class="btn">
+</body>
+</html>
+```
+
+
 ## 普通兄弟选择器（以波浪号分隔）
 会选取指定元素之后的兄弟元素，即使自身的子元素有兄弟元素，也并不会选择自身的子元素。
 比如`<div>`标签有子元素`<p>`标签并且也有兄弟元素`<p>`标签，只会选择自己的兄弟元素，不选择自己的子元素。
