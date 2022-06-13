@@ -1,4 +1,6 @@
-# BFC
+# FC
+FC是Formatting Context的简写，直译过来是格式化上下文，FC就是html页面中的某个元素内的一套渲染规则，决定了其子元素如何布局，以及和其他元素在html页面中的位置。
+## BFC（块级格式化上下文）
 BFC（Block Formatting Context）叫做“块级格式化上下文”。BFC的布局规则例如以下：
 
 1.内部的盒子会在垂直方向，一个个地放置；
@@ -24,3 +26,5 @@ BFC（Block Formatting Context）叫做“块级格式化上下文”。BFC的�
 4.display为inline-block。table-cell，table-caption。flex；
 
 5.overflow不为visible
+
+## 
