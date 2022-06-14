@@ -36,7 +36,9 @@
 	- `transform:translatex();`正值向右 负值向左
 	- `transform:translatey();`正值向下 负值向上
 	- `transform:translatez();`正值向前 负值向后
-
+- `transform-style: preserve-3d;`3d空间的透视效果
+==`transform`的四个功能函数注意顺序不同值相同最终效果不同==
+先缩放再偏移和先偏移再缩放所达到的效果不同，因为先缩放，会以中心点为缩放基点，而先偏移，则以偏移后的中心点为缩放基点。
 ### perspective（景深）
 - 两种写法
 	- `perspective:;`写给父元素
