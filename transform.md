@@ -28,6 +28,15 @@
 	-  `transform:rotate3d(1,0,0,30deg);`表示沿着x轴旋转30°。
 
 ### translate（偏移函数）
+`transform:translate(value1,value1);`
+在原来的位置上进行偏移，一个值代表x水平方向偏移，两个值时，第一个代表x，第二个代表y，值可以使具体的数值，也可以是百分比。
+- `transform:translate(0px,0px);`
+- `transform:translate(50%);`是自身高度的百分比
+- `transform:translate3d(x,y,z);
+	- `transform:translatex();`正值向右 负值向左
+	- `transform:translatey();`正值向下 负值向上
+	- `transform:translatez();`正值向前 负值向后
+
 ### perspective（景深）
 - 两种写法
 	- `perspective:;`写给父元素
