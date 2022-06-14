@@ -22,9 +22,13 @@
 ### rotate（旋转函数）
 **默认是二维平面以中心点为基点旋转，可以认为是该二维平面沿着三维空间的z轴进行旋转，可以用`transform-origin:`属性更改旋转基点。**
 - `transform:rotate(angle);`只支持写一个值，正值会顺时针旋转，负值会逆时针旋转。
-	- `transform:rotatex(angle);`视角在正上方，沿着二维平面的x轴旋转
-	- `transform:rotatey(angle);`表示沿着二维平面的y轴旋转
+	- `transform:rotatex(angle);`视角在正上方，盒子沿着二维平面的x轴旋转。
+	- `transform:rotatey(angle);`视角在正上方。盒子沿着二维平面的y轴旋转。
+- `transform:rotate3d(x,y,z,angle);`x，y，z的取值只能为0或1或-1，0代表不旋转，1代表旋转，-1代表反方向旋转。
+	-  `transform:rotate3d(1,0,0,30deg);`表示沿着x轴旋转30°。
+
 ### translate（偏移函数）
-### perspective
+### perspective（景深）
+`perspect`
 
 
