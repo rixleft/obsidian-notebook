@@ -3,7 +3,7 @@
 - `transform:skew(x-angle,y-angle);`表示沿着x轴和y轴倾斜转换,相当于设置 `transform:skewx(角度);`h和 `transform:skewy(角度);`。
 
 ### scale（缩放函数）
-**默认是以中心点为基点缩放，可以用`transform-origin:`属性更改缩放基点。该属性的属性值可以是具体的像素值，也可以是top,center,bottom,left,right等。**
+**默认是以中心点为基点缩放，可以用`transform-origin:`属性更改缩放基点。该属性的属性值可以是具体的像素值，也可以是方位名词——top,center,bottom,left,right等。**
 例如：
 	`transform-origin:left top;`
 	`transform-origin:20px 30px;`
@@ -29,6 +29,10 @@
 
 ### translate（偏移函数）
 ### perspective（景深）
-`perspect`
+- 两种写法
+	- `perspective:;`写给父元素
+	- `transform：perspective();`写给元素本身
+- **可通过`transform-origin:`属性更改景深基点，属性值可选择像素或方位名词——top,center,bottom,left,right等。**
+- 
 
 
