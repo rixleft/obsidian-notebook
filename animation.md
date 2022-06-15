@@ -51,7 +51,7 @@
 	- `initial`设置该属性为它的默认值
 	- `inherit` 从父元素继承该属性
 - `animation-direction:` 定义是否循环交替反向播放动画。
-	- `noemal`默认值，动画按正常播放。
+	- `normal`默认值，动画按正常播放。
 	- `reverse`动画反向播放
 	- `alternate`动画在奇数次正向播放，在偶数次反向播放。
 	- `alternate-reverse`动画在奇数次反向播放，在偶数次正向播放。
