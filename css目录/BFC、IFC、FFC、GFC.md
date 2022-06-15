@@ -97,9 +97,12 @@ IFC（Inline Formatting Contexts）直译为"内联格式化上下文"，IFC 的
 	- `column`：主轴（Y轴）为垂直方向，起点在上方。
 	- `column-reverse`：主轴（Y轴）为垂直方向，起点在下方。
 - `flex-wrap`默认情况下，项目都排在一条线（又称"轴线"）上。该属性定义，如果一条轴线排不下时如何换行。
+	- `nowrap`（默认），不换行，当不能再收缩时，内容会溢出。
+	- `wrap`：换行，第一行在上方，该属性会将盒子划分为n等份，n是父盒子宽高和子盒子排列行数共同作用的结果，例如当父盒子为100像素宽高，子盒子为25像素宽高时，子盒子有7个，则第一排放四个，并且将高分为两份，上下同为50像素，剩余三个子盒子会在下面左对齐显示。
+	- `wrap-reverse`：换行，第一行在下方。
+- `flex-flow`该属性为`flex-direction`和`flex-wrap`的复合属性，默认值为`row nowrap`。
+- `justify-content`该属性定义了弹性盒子在主轴的对齐方式。
 	- 
-- `flex-flow`
-- `justify-content`
 - `align-items`
 - `align-content`
 
