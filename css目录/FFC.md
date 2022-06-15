@@ -55,3 +55,7 @@
 	-  `center`：侧轴的中点对齐。
 	-  `baseline`: 项目的第一行文字的基线对齐。
 	-  `stretch`（默认值）：如果父元素未设置高度或设为auto，将子元素占满整个容器的高度。
+
+
+==不懂可到该网址查询
+http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
