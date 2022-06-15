@@ -102,9 +102,19 @@ IFC（Inline Formatting Contexts）直译为"内联格式化上下文"，IFC 的
 	- `wrap-reverse`：换行，第一行在下方。
 - `flex-flow`该属性为`flex-direction`和`flex-wrap`的复合属性，默认值为`row nowrap`。
 - `justify-content`该属性定义了弹性盒子在主轴的对齐方式。
-	- 
-- `align-items`
-- `align-content`
+	-  `flex-start`（默认值）：左对齐
+	-  `flex-end`：右对齐
+	-  `center`： 居中
+	-  `space-between`：两端对齐，项目之间的间隔都相等。
+	- `space-around`：每个子盒子两侧的间隔相等。所以，子盒子之间的间隔是边框间隔的两倍。
+	- ![[justify-content.png]]
+- `align-items`属性定义项目在侧轴上如何对齐。
+	-  `flex-start`：侧轴的起点对齐，侧轴如果是Y轴则是从上方对齐，侧轴如果是X轴则是从左侧对齐。
+	-  `flex-end`：侧轴的终点对齐。侧轴如果是Y轴则是从下方对齐，侧轴如果是X轴则是从右侧对齐。
+	-  `center`：侧轴的中点对齐。
+	-  `baseline`: 项目的第一行文字的基线对齐。
+	-  `stretch`（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度。
+- `align-content`属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。
 
 ==注意：FFC布局中，float、clear、vertical-align属性不会生效。==
 
