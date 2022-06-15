@@ -19,3 +19,10 @@
 	- 指定了动画的持续时间，默认值为0，意味着无动画效果。
 - `animation-delay` 
 	- 定义了动画从多长时间内后开始执行，表示动画的延迟时间，它的值在复合属性写法下，默认是在持续时间之后。
+- `animation-timing-function`
+	- `linear`  动画从头到尾的速度都是相同的
+	- `ease` 默认值， 动画以低速开始，然后加快，在结束前变慢。
+	- `ease-in` 动画以低速开始。
+	- `ease-out` 动画以低速结束
+	- `ease-in-out` 
+	- `steps(number,start|end)`
