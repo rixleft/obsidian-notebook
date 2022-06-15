@@ -85,7 +85,25 @@ IFC（Inline Formatting Contexts）直译为"内联格式化上下文"，IFC 的
 形成条件非常简单，需要注意的是当IFC中有块级元素插入时，会产生两个未命名的块元素将父元素分割开来，产生两个IFC。
 
 ## FFC（弹性格式化上下文）
-弹性盒子由弹性容器和弹性子元素组成，弹性容器通过设置display属性的值为flex或者inline-flex将其定义为弹性容器，弹性容器中包含了一个或者多个弹性子元素。设置为 flex 的容器被渲染为一个块级元素，而设置为 inline-flex 的容器则渲染为一个行内元素。
+- 弹性盒子由弹性容器和弹性子元素组成，弹性容器通过设置display属性的值为flex或者inline-flex将其定义为弹性容器，设置为 flex 的容器被渲染为一个块级元素，而设置为 inline-flex 的容器则渲染为一个行内元素。弹性容器中包含了一个或者多个弹性子元素。
+
+- 采用 Flex 布局的元素，称为 Flex 容器（flex container），简称"容器"。它的所有子元素自动成为容器成员，称为 Flex 项目（flex item），简称"项目"。
+
+- 容器默认存在两根轴：水平的主轴（main axis）和垂直的交叉轴（cross axis）。主轴的开始位置（与边框的交叉点）叫做`main start`，结束位置叫做`main end`；交叉轴的开始位置叫做`cross start`，结束位置叫做`cross end`。项目默认沿主轴排列。单个项目占据的主轴空间叫做`main size`，占据的交叉轴空间叫做`cross size`。
+
+- `flex-direction`该属性决定主轴的方向（即项目的排列方向，它有四个值：
+	- `row`（默认值）：主轴（X轴）为水平方向，起点在左端。
+	- `row-reverse`：主轴（Y轴）为水平方向，起点在右端。
+	- `column`：主轴（Y轴）为垂直方向，起点在上方。
+	- `column-reverse`：主轴（Y轴）为垂直方向，起点在下方。
+- `flex-wrap`默认情况下，项目都排在一条线（又称"轴线"）上。该属性定义，如果一条轴线排不下时如何换行。
+	- 
+- `flex-flow`
+- `justify-content`
+- `align-items`
+- `align-content`
+
+==注意：FFC布局中，float、clear、vertical-align属性不会生效。==
 
 
 ## GFC （网格格式化上下文）
