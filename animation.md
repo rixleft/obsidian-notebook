@@ -1,25 +1,25 @@
 | 属性                        | 描述                             |
 | --------------------------- | -------------------------------- |
-| `animation`                 | 复合属性                         |
-| `animation-name`            | 指定要绑定的选择器的关键帧的名称 |
-| `animation-duration`        | 动画的持续时间                   |
-| `animation-delay`           | 设置动画在启动前的延迟间隔时间   |
-| `animation-timing-function` | 设置动画将何如完成一个周期       |
-| `animation-iteration-count` | 设置动画的播放次数               |
-| `animation-play-state`      | 指定动画是否正在运行或已停止     |
-| `animation-fill-mode`       | 规定到动画不播放或已完成时的状态                                 |
-| `animation-direction`       | 指定是否应该轮流反向播放动画                                 |
+| `animation:`                 | 复合属性                         |
+| `animation-name:`            | 指定要绑定的选择器的关键帧的名称 |
+| `animation-duration:`        | 动画的持续时间                   |
+| `animation-delay:`           | 设置动画在启动前的延迟间隔时间   |
+| `animation-timing-function:` | 设置动画将何如完成一个周期       |
+| `animation-iteration-coun:` | 设置动画的播放次数               |
+| `animation-play-state:`      | 指定动画是否正在运行或已停止     |
+| `animation-fill-mode:`       | 规定到动画不播放或已完成时的状态                                 |
+| `animation-direction:`       | 指定是否应该轮流反向播放动画                                 |
 
 
-- `animation`
+- `animation:`
 	- 复合写法对上述属性不都要求有顺序，但持续时间和延迟时间，总是持续时间在前，延迟时间在后，其余并无顺序。
-- `animation-name`  
+- `animation-name:`  
 	- 制定了要绑定到选择器的关键帧的名称
-- `animation-duration`
+- `animation-duration:`
 	- 指定了动画的持续时间，默认值为0，意味着无动画效果。
-- `animation-delay` 
+- `animation-delay:` 
 	- 定义了动画从多长时间内后开始执行，表示动画的延迟时间，它的值在复合属性写法下，默认是在持续时间之后。
-- `animation-timing-function`
+- `animation-timing-function:`
 	- `linear`  动画从头到尾的速度都是相同的
 	- `ease` 默认值， 动画以低速开始，然后加快，在结束前变慢。
 	- `ease-in` 动画以低速开始。
@@ -30,4 +30,16 @@
 		- 第二个参数是可选的，表示动画是从时间段的开头连续还是末尾连续。含义分别如下：
 			-   start：表示动画的第一帧会被立即执行,直接从第二帧开始，然后以第一帧结束。
 			-   end：默认值，end则表示动画从第一帧开始到正常结束。
-- `animation-iteration-count` 
+- `animation-iteration-count:` 
+	- 表示动画执行的次数，如果写具体数字，则表示需要执行几次，可以写`infinite`，表示无限次执行。
+-  `animation-play-state:`  
+	- `paused` 指定暂停动画。
+	- `running`指定正在运行的动画（默认）。
+- `animation-fill-mode:` 
+	- 规定当动画不播放或者执行完成后的状态。
+	- `none` 默认值，动画在执行之前和之后不会应用。
+	- `forwards` 在动画结束后，停止在最后的状态。
+	- `backwards`
+	- `both`
+	- `initial`
+	- `inherit``
