@@ -44,6 +44,6 @@
 	- `perspective:;`写给父元素
 	- `transform：perspective();`写给元素本身
 - **可通过`transform-origin:`属性更改景深基点，属性值可选择像素或方位名词——top,center,bottom,left,right等。**
-- 
+- t
 
 
