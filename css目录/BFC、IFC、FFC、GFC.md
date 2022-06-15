@@ -115,6 +115,12 @@ IFC（Inline Formatting Contexts）直译为"内联格式化上下文"，IFC 的
 	-  `baseline`: 项目的第一行文字的基线对齐。
 	-  `stretch`（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度。
 - `align-content`属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。
+	-    `flex-start`：与交叉轴的起点对齐。
+	-    `flex-end`：与交叉轴的终点对齐。
+	- -   `center`：与交叉轴的中点对齐。
+	- -   `space-between`：与交叉轴两端对齐，轴线之间的间隔平均分布。
+	- -   `space-around`：每根轴线两侧的间隔都相等。所以，轴线之间的间隔比轴线与边框的间隔大一倍。
+	- -   `stretch`（默认值）：轴线占满整个交叉轴。
 
 ==注意：FFC布局中，float、clear、vertical-align属性不会生效。==
 
