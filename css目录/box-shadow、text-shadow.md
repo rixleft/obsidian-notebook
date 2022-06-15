@@ -1,10 +1,10 @@
 ## 盒子阴影
-`box-shadow: 1px 0px 0px 0px #00f inset`
-- 水平偏移值  正值向右  负值向左
-- 垂直偏移值  正值向下  负值向上
-- 阴影的模糊半径  不能为负值
-- 阴影的缩放  正值放大  负值缩小
-- 阴影的颜色  RBG或者十六进制颜色或英文
+`box-shadow: h-shadow v-shadow blur spread color inset;
+- `h-shadow` 水平偏移值  正值向右  负值向左
+- `v-shadow` 垂直偏移值  正值向下  负值向上
+- `blur` 阴影的模糊半径  不能为负值
+- `spread` 阴影的缩放  正值放大  负值缩小
+- `color` 阴影的颜色  RBG或者十六进制颜色或英文
 - 阴影的位置  默认是`outset`(外阴影) `inset`是内阴影
 	- 但必须注意：写`box-shadow:1px 0px 0px 0px #00f outset`会报错，默认值是该值，但是它不是属性值，不可以写。
 
