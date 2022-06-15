@@ -90,7 +90,7 @@ IFC（Inline Formatting Contexts）直译为"内联格式化上下文"，IFC 的
 - 采用 Flex 布局的元素，称为 Flex 容器（flex container），简称"容器"。它的所有子元素自动成为容器成员，称为 Flex 项目（flex item），简称"项目"。
 
 - 容器默认存在两根轴：水平的主轴（main axis）和垂直的交叉轴（cross axis）。主轴的开始位置（与边框的交叉点）叫做`main start`，结束位置叫做`main end`；交叉轴的开始位置叫做`cross start`，结束位置叫做`cross end`。项目默认沿主轴排列。单个项目占据的主轴空间叫做`main size`，占据的交叉轴空间叫做`cross size`。
-
+#### 该属性是给父元素设置的
 - `flex-direction`该属性决定主轴的方向（即项目的排列方向，它有四个值：
 	- `row`（默认值）：主轴（X轴）为水平方向，起点在左端。
 	- `row-reverse`：主轴（Y轴）为水平方向，起点在右端。
@@ -113,16 +113,24 @@ IFC（Inline Formatting Contexts）直译为"内联格式化上下文"，IFC 的
 	-  `flex-end`：侧轴的终点对齐。侧轴如果是Y轴则是从下方对齐，侧轴如果是X轴则是从右侧对齐。
 	-  `center`：侧轴的中点对齐。
 	-  `baseline`: 项目的第一行文字的基线对齐。
-	-  `stretch`（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度。
+	-  `stretch`（默认值）：如果父元素未设置高度或设为auto，将子元素占满整个容器的高度。
 - `align-content`属性定义了多根轴线的对齐方式。
-	-    `flex-start`：与交叉轴的起点对齐。
-	-    `flex-end`：与交叉轴的终点对齐。
-	- -   `center`：与交叉轴的中点对齐。
-	- -   `space-between`：与交叉轴两端对齐，轴线之间的间隔平均分布。
-	- -   `space-around`：每根轴线两侧的间隔都相等。所以，轴线之间的间隔比轴线与边框的间隔大一倍。
-	- -   `space-evenly`：平均。
+	-  `flex-start`：与侧轴的起点对齐。
+	-  `flex-end`：与侧轴的终点对齐。
+	-  `center`：与侧轴的中点对齐。
+	-  `space-between`：如果主轴是X轴，则将每行的子元素平均间隔，两端对齐无间隔。
+	- `space-around`：如果主轴是X轴，则将每行的子元素平均两倍间隔，两端有单倍间隔，相当于`padding`的效果。
+	- `space-evenly`：如果主轴是X轴，则将每行的子元素平均间隔，两端同样有相等的间隔。
 
 ==注意：FFC布局中，float、clear、vertical-align属性不会生效。==
 
+#### 该属性是给子元素设置的
+-   `order`属性定义项目的排列顺序。数值越小，排列越靠前，默认为0。例如
+	- 
+-   `flex-grow`
+-   `flex-shrink`
+-   `flex-basis`
+-   `flex`
+-   `align-self`
 
 ## GFC （网格格式化上下文）
