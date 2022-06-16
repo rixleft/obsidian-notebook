@@ -107,6 +107,7 @@ position属性指定了元素的定位类型。
             width: 300px;
             height: 200px;
             background: red;
+            /*下面六行代码必须都写才能居中*/
             position: absolute;
             top: 0;
             left: 0;
