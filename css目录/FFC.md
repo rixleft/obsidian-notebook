@@ -16,8 +16,8 @@
 	- `wrap-reverse`：换行，第一行在下方。
 - `flex-flow`该属性为`flex-direction`和`flex-wrap`的复合属性，默认值为`row nowrap`。
 - `justify-content`该属性定义了弹性盒子在主轴的对齐方式。
-	-  `flex-start`（默认值）：左对齐
-	-  `flex-end`：右对齐
+	-  `flex-start`（默认值）：与主轴的起点对齐
+	-  `flex-end`：与主轴的终点对齐
 	-  `center`： 居中
 	-  `space-between`：两端对齐，项目之间的间隔都相等。
 	- `space-around`：每个子盒子两侧的间隔相等。所以，子盒子之间的间隔是边框间隔的两倍。
