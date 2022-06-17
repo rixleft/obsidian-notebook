@@ -85,7 +85,7 @@ IFC（Inline Formatting Contexts）直译为"内联格式化上下文"，IFC 的
 形成条件非常简单，需要注意的是当IFC中有块级元素插入时，会产生两个未命名的块元素将父元素分割开来，产生两个IFC。
 
 ## FFC（弹性格式化上下文）
-- 弹性盒子由弹性容器和弹性子元素组成，弹性容器通过设置display属性的值为flex或者inline-flex将其定义为弹性容器，设置为 flex 的容器被渲染为一个块级元素，而设置为 inline-flex 的容器则渲染为一个行内元素。弹性容器中包含了一个或者多个弹性子元素。
+- 直译为"**弹性格式化上下文**"，`display`值为`flex`或者`inline-flex`的元素将会生成自适应容器`（flex container）`，`display:flex`将容器渲染为一个块级元素，`display:inline-flex`将容器渲染为一个行内元素，弹性容器中包含了一个或者多个弹性子元素。
 
 - 采用 Flex 布局的元素，称为 Flex 容器（flex container），简称"容器"。它的所有子元素自动成为容器成员，称为 Flex 项目（flex item），简称"项目"。
 
@@ -145,4 +145,5 @@ IFC（Inline Formatting Contexts）直译为"内联格式化上下文"，IFC 的
 ==不懂可到该网址查询
 http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
 
-## GFC （网格格式化上下文）
+## GFC （网格布局格式化上下文）
+- `GFC(GridLayout Formatting Contexts)`直译为"**网格布局格式化上下文**"（是CSS3.0的新增布局：所以该属性的兼容性问题较大），当为一个元素设置`display`为`grid`的时候，此元素将会获得一个独立的渲染区域，我们可以通过在网格容器`（grid container）`上定义网格定义行`（grid-template-rows）`和网格定义列`（grid-template-columns）`属性各在网格项目`（grid item）`上定义网格行`（grid row）`和网格列`（grid columns）`为每一个网格项目`（grid item）`定义位置和空间。
