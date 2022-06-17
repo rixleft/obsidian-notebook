@@ -146,4 +146,10 @@ IFC（Inline Formatting Contexts）直译为"内联格式化上下文"，IFC 的
 http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
 
 ## GFC （网格布局格式化上下文）
-- `GFC(GridLayout Formatting Contexts)`直译为"**网格布局格式化上下文**"（是CSS3.0的新增布局：所以该属性的兼容性问题较大），当为一个元素设置`display`为`grid`的时候，此元素将会获得一个独立的渲染区域，我们可以通过在网格容器`（grid container）`上定义网格定义行`（grid-template-rows）`和网格定义列`（grid-template-columns）`属性各在网格项目`（grid item）`上定义网格行`（grid row）`和网格列`（grid columns）`为每一个网格项目`（grid item）`定义位置和空间。
+- `GFC(GridLayout Formatting Contexts)`直译为"**网格布局格式化上下文**"（是CSS3.0的新增布局：所以该属性的兼容性问题较大），当为一个元素设置`display`为`grid`的时候，此元素将会获得一个独立的渲染区域，即块级元素，当为一个元素设置`display`为`inline-grid`的时候，此元素将会获得一个行内块元素的渲染区域。
+
+| 属性                    | 描述                     |
+| ----------------------- | ------------------------ |
+| `grid-template-columns` | 定义网格布局中的列的数量 |
+| `grid-template-rows`    | 定义网格布局中的行的数量 |
+|                         |                          |
