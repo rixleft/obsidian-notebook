@@ -152,4 +152,5 @@ http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
 | ----------------------- | ------------------------ |
 | `grid-template-columns` | 定义网格布局中的列的数量 |
 | `grid-template-rows`    | 定义网格布局中的行的数量 |
-|                         |                          |
+| `grid-tem[late-areas`   |                          |
+| `grid-gap`                        |                          |
