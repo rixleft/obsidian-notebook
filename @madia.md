@@ -15,4 +15,25 @@
 在媒体查询功能里显示`display:none`和隐藏`display:block`比较常用   
 注意：如果使用了弹性盒还存在显示和隐藏  那么此时显示的时候只需要写`dispaly:flex`。
 
-注意：媒体查询时，一定要添加样式表，防止溜掉某个尺寸的样式没写，要注意它的使用顺序，书写时元素的属性值要从小向大写。
+
+
+```html
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css文件1" media="(min-width:300px)">
+    <link rel="stylesheet" href="./css文件2" media="(min-width:400px)">
+    <link rel="stylesheet" href="./css文件3" media="(min-width:500px) and (max-width:700px)">
+</head>
+<body>
+    
+    <!-- 
+        注意：媒体查询时，一定要添加样式表，防止溜掉某个尺寸的样式没写，要注意它的使用顺序，书写时元素的属性值要从小向大写。
+     -->
+</body>
+</html>
+```
