@@ -150,7 +150,10 @@ http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
 
 | 属性                    | 描述                     |
 | ----------------------- | ------------------------ |
-| `grid-template`         | 是下列三个属性的复合写法                         |
-| `grid-template-columns` | 定义网格布局中的列的数量 |
+| `grid-template`         | 是下列三个属性的复合写法 |
+| `grid-auto-rows`        | 指定行的自动尺寸         |
 | `grid-template-rows`    | 定义网格布局中的行的数量 |
-| `grid-template-areas`   | 用于设置网格布局                         |
+| `grid-auto-columns`     | 指定列的自动尺寸         |
+| `grid-template-columns` | 定义网格布局中的列的数量 |
+| `grid-template-areas`   | 用于设置网格布局         |
+| `grid-auto-flow`        | 指定自动布局怎么运作，精准指定在网格中被自动布局的元素怎么                         |
