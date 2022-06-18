@@ -1,6 +1,19 @@
 ### 媒体查询
 使用@media查询，可以针对不同的媒体类型定义不同的样式，@media可以针对不同的屏幕尺寸设置不同的样式，特别是如果你需要设置设计响应式的页面，@media 是非常有用的。当重置浏览器大小的过程中，页面也会根据浏览器的宽度和高度重新渲染页面。
 
+| 媒体类型     | 描述                                     |
+| ------------ | ---------------------------------------- |
+| `all`        | 表示所有的媒体设备                       |
+| `aural`      | 表示语音和音频合成器（听觉设备）         |
+| `braille`    | 表示盲人用点字法触觉回馈设备             |
+| `embossed`   | 表示盲人用点字法打印机                   |
+| `handheld`   | 表示小型手持设备，手机，平板             |
+| `print`      | 表示打印机                               |
+| `projection` | 表示投影设备                             |
+| `screen`     | 表示电脑显示器                           |
+| `tty`        | 表示使用固定密度字母栅格的媒体，如打字机 |
+| `tv`         | 表示电视机类型的设备                                         |
+
 - @media 设备（all screen speech print）（范围）{对应的css}
 - @media 设备 （所有 电脑手机等 阅读器 打印）and（范围）and（范围）and（范围）......{对应的css}
 - `@media not|only mediatype and (mediafeature and|or|not mediafeature) {CSS-Code;}`
@@ -37,3 +50,134 @@
 </body>
 </html>
 ```
+
+
+## 媒体特性
+除了具体的类型外，还可以通过一些属性来描述设备的具体特征，例如宽度、高度、分辨率等，如下表所示：
+值|
+|aspect-ratio|输出设备页面可见区域的宽高比|
+|color||输出设备每个像素的比特值，常见的有 8、16、32 位。如果设备不支持输出彩色，则该值为 0|
+
+color-index
+
+输出设备的颜色查询表中的条目数量。如果没有使用颜色查询表，则该值等于 0
+
+device-aspect-ratio
+
+输出设备的宽高比
+
+device-height
+
+输出设备屏幕的可见高度
+
+device-width
+
+输出设备屏幕的可见宽度
+
+grid
+
+查询输出设备使用的是网格屏幕还是点阵屏幕
+
+height
+
+页面可见区域的高度
+
+max-aspect-ratio
+
+输出设备屏幕可见区域宽度与高度的最大比率
+
+max-color
+
+输出设备每个像素比特值的最大值
+
+max-color-index
+
+输出设备的颜色查询表中的最大条目数
+
+max-device-aspect-ratio
+
+输出设备屏幕可见区域宽度与高度的最大比率
+
+max-device-height
+
+输出设备屏幕可见区域的最大高度
+
+max-device-width
+
+输出设备屏幕的最大可见宽度
+
+max-height
+
+页面可见区域的最大高度
+
+max-monochrome
+
+输出设备单色帧缓冲区中每个像素的最大位深度。如果设备并非黑白屏幕，则该值为 0
+
+max-resolution
+
+设备的最大分辨率
+
+max-width
+
+页面可见区域的最大宽度
+
+min-aspect-ratio
+
+输出设备屏幕可见区域宽度与高度的最小比率
+
+min-color
+
+输出设备每个像素比特值的最小值
+
+min-color-index
+
+输出设备的颜色查询表中的最小条目数
+
+min-device-aspect-ratio
+
+输出设备的屏幕可见区域宽度与高度的最小比率
+
+min-device-width
+
+输出设备的屏幕的最小可见宽度
+
+min-device-height
+
+输出设备的屏幕的最小可见高度
+
+min-height
+
+页面可见区域的最小高度
+
+min-monochrome
+
+输出设备单色帧缓冲区中每个像素的最小位深度。如果设备并非黑白屏幕，则该值为 0
+
+min-resolution
+
+设备的最小分辨率
+
+min-width
+
+页面可见区域的最小宽度
+
+monochrome
+
+输出设备单色帧缓冲区中每个像素的位深度。如果设备并非黑白屏幕，则该值为 0
+
+orientation
+
+页面可见区域的旋转方向
+
+resolution
+
+设备的分辨率。如：96dpi、300dpi、118dpcm
+
+scan
+
+电视类设备的扫描工序
+
+width
+
+页面可见区域的宽度
