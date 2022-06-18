@@ -41,8 +41,16 @@ white-space
 
 
 ### 截字
-截字的必要条件
-        有一定的宽度 width:value
-        强制在一排显示 white-space:nowrap
-        溢出裁切 overflow：hidden
-        省略号 text-overflow:ellipsis
+- 截字的必要条件
+	- 单行文本溢出
+        - `width:value;` 有一定的宽度 
+        - `white-space:nowrap;` 强制在一排显示
+        - `overflow：hidden;` 溢出裁切
+        - `text-overflow:ellipsis;` 省略号 
+	- 多行文本溢出
+		- `overflow:hidden;`
+		- `text-overflow:ellipsis;`
+		- `display:-webkit-box;`
+		- `-webkit-line-clamp:number;`
+		- ``
+
