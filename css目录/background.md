@@ -107,11 +107,9 @@
 ## background-size
 
 - `background-size:100px;`一个值是设置图片的宽度，将图片等比例缩放。
-- `background-size:100px 200px;`两个值 第一个代表图片的宽度，第二个代表图片的高度.
-	background-size:contain;
-	contain 等比例缩放，当高度宽度都不能缩放时停止
-	background-size:cover;
-	cover 等比例缩放，当宽度高度有一个不能缩放时停止
+- `background-size:100px 200px;`两个值 第一个代表图片的宽度，第二个代表图片的高度。
+- `background-size:contain;`等比例缩放，当高度宽度都不能缩放时停止。
+- `background-size:cover;`等比例缩放，当宽度高度有一个不能缩放时停止。
 
 ## background-origin
 **默认情况下，背景颜色从border区域加载 ，背景图片从padding区域加载，但盒子左边框和上边框的图片是背景图片平铺的效果，当取消背景图片平铺后，左边框和上边框的背景区域不显示图片，想要使得边框区域显示背景图片，必须设置该属性。**
