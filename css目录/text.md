@@ -44,13 +44,13 @@ white-space
 - 截字的必要条件
 	- 单行文本溢出
         - `width:value;` 有一定的宽度 
+        - `overflow:hidden;` 溢出裁切
         - `white-space:nowrap;` 强制在一排显示
-        - `overflow：hidden;` 溢出裁切
         - `text-overflow:ellipsis;` 省略号 
 	- 多行文本溢出
-		- `overflow:hidden;`
-		- `text-overflow:ellipsis;`
-		- `display:-webkit-box;`
-		- `-webkit-line-clamp:number;`
-		- ``
+		- `overflow:hidden;` 溢出裁切
+		- `text-overflow:ellipsis;`省略号
+		- `display:-webkit-box;`弹性盒模型显示
+		- `-webkit-line-clamp:number;`限制在盒子内文本的行数
+		- `-webkit-box-orient:vertical;`盒子里子元素的排列方式
 
