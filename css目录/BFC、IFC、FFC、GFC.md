@@ -6,7 +6,7 @@ FC是Formatting Context的简写，直译过来是格式化上下文，FC就是h
 
 ## BFC（块级格式化上下文）
 BFC（Block Formatting Context）叫做“块级格式化上下文”。BFC的布局规则例如以下：
-
+display:block;
 1.内部的盒子会在垂直方向，一个个地放置；
 
 2.盒子垂直方向的距离由margin决定，**属于同一个BFC的两个相邻Box的上下margin会发生重叠**；
