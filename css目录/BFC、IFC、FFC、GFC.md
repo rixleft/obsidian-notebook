@@ -150,7 +150,7 @@ http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
 
 | 属性                    | 描述                                                           |
 | ----------------------- | -------------------------------------------------------------- |
-| `grid-template`         | 是下列三个属性的复合写法                                       |
+| `grid-template`         | 是复合写法                                       |
 | `grid-auto-rows`        | 指定行的自动尺寸                                               |
 | `grid-template-rows`    | 定义网格布局中的行的数量                                       |
 | `grid-auto-columns`     | 指定列的自动尺寸                                               |
@@ -161,4 +161,8 @@ http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
 | `grid-row-gap`          | 设置网格列之间的间隙                                           |
 | `grid-column-gap`       | 设置网格行之间的间隙                                           |
 
-- `grid-template`复合属性，
+- `grid-template`是一种复合写法
+	-   `grid-template-rows`定义容器的行属性
+		- 
+	-   `grid-template-columns`
+	-  `grid-template-areas`
