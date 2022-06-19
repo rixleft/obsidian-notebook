@@ -160,3 +160,5 @@ http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
 | `grid-gap`              | 设置网格单元格之间的间隙，是行和列的复合写法，                                                               |
 | `grid-row-gap`          | 设置网格列之间的间隙                                           |
 | `grid-column-gap`       | 设置网格行之间的间隙                                           |
+
+- `grid-template`复合属性，
