@@ -10,24 +10,26 @@
 
 方式一：
 
-```
+```javascript
 <button οnclick="alert('今天天气很好！');">今天天气?</button>
-> 
-> 虽然可以写在标签的属性中，但是结构与行为耦合，不方便维护，不推荐使用
-
+ 
+ 虽然可以写在标签的属性中，但是结构与行为耦合，不方便维护，不推荐使用。
+```
  方式二：
 
-> <a href="javascript:alert('你点疼我了！！');">点我</a>
+```javascript
+<a href="javascript:alert('你点疼我了！！');">点我</a>
+```
 
-2.页内式
+2.页内式(内联式)
 
->     <body>  
->           ……  
->       <script  type="text/text/javascript">  
->           alert('我出现了')  
->       </script>  
->     </body>
-
+```javascript
+<body>   
+	<script  type="text/text/javascript">  
+           alert('我出现了')  
+    </script>  
+</body>
+```
  注意事项：
 
  <script></script>标签中的js代码一版写在文档的尾部；
