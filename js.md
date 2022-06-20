@@ -38,34 +38,35 @@
 **所以如果把js代码写在head中，那么js代码执行完毕之前后续页面无法被加载。**
 
 3、外链式
+```javascript
+
+<script type="text/javascript" src="01-js书写格式.js"></script>  
+ 注意事项  
+     外链式的script代码块中不能编写js代码, 即便写了也不会执行  
+     
+     <script type="text/javascript" src="index.js">  
+       alert("今天天气很好！"); // 不会被执行  
+ </script>
+
 ```
-
-><script type="text/javascript" src="01-js书写格式.js"></script>  
-> 注意事项  
->     外链式的script代码块中不能编写js代码, 即便写了也不会执行  
->     
-> 
->     <script type="text/javascript" src="index.js">  
->       alert("今天天气很好！"); // 不会被执行  
-> </script>
-
 由于每次加载外链式的js文件都会发送一次请求, 这样非常消耗性能, 所以在企业开发中推荐将多个JS文件打包成为一个JS文件,以提升网页的性能和加载速度。
-```
 
 ## 2.JS输出方式
 
->     alert("Hello, World!");  
->         控制浏览器弹出一个警告框  
->     document.write("Hello World!");  
->         可以向body中输出一个内容  
->     console.log("Hello World!");  
->         向控制台输出一个内容  
->          console.warn("警告输出！");  
->          console.error("错误输出！");  
->     prompt("Hello, World！");  
->         在网页中弹出输入框，一般用于接收用户输入的信息  
->     comfirm("Hello，JavaScript！");  
->         在网页中弹出提示框，显示信息，该方法一般与if判断语句结合使用
+```javascript
+	alert("Hello, World!");  
+         控制浏览器弹出一个警告框  
+     document.write("Hello World!");  
+         可以向body中输出一个内容  
+     console.log("Hello World!");  
+         向控制台输出一个内容  
+          console.warn("警告输出！");  
+          console.error("错误输出！");  
+     prompt("Hello, World！");  
+         在网页中弹出输入框，一般用于接收用户输入的信息  
+         comfirm("Hello，JavaScript！");  
+         在网页中弹出提示框，显示信息，该方法一般与if判断语句结合使用
+```
 
  3.JS严格区分大小写
 
