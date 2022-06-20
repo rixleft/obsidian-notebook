@@ -155,3 +155,5 @@ COMFIRM("Hello，JavaScript！");   // 错误
 	name = 'John Doe' // 赋值操作
 
 ```
+
+### 数据类型
