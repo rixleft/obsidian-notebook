@@ -17,6 +17,8 @@
 
 - `grid-template`是一种复合写法
 	-   `grid-template-rows`定义容器的行属性
-		- `grid-template-rows:1 / 3`是指从盒子的左边的其
+		- `grid-template-rows:1 / 3;`是指从盒子的左边的起始边线开始，指跨越了几条纵向边线。
+		- `grid-template-rows：40px;`指每列的宽度为40px。
+		- `grid-template-rows:40px 1fr;`指第一列的宽度为40px，其余每列占除去40px之外的空间，每列占据1份。
 	-   `grid-template-columns`
 	-  `grid-template-areas`
