@@ -17,14 +17,27 @@
 
 - `grid-template`是一种复合写法
 	-   `grid-template-rows`定义容器的行属性
-		- `grid-template-rows:1 / 3;`是指从盒子的左边的起始边线开始，指跨越了几条纵向边线。
-			- `grid-column-start:`指盒子的边从第几条纵线开始计算，
+		- `grid-template-rows:1 / 3;`是指从盒子的上边的起始边线开始，指跨越了几条横向边线。
+			- `grid-row-start:`指盒子的边从第几条横线开始计算，
 				- `number;`可以为负值。
-				- `span number;`也可以写跨越了几列。
-			- `grid-column-end:`指盒子的边从第几条纵线结束计算。
+				- `span number;`也可以写跨越了几行。
+			- `grid-row-end:`指盒子的边从第几条横线结束计算。
 				- `number;`可以为负值。
-				- `span number;`也可以写跨越了几列。
+				- `span number;`也可以写跨越了几行。
 		- `grid-template-rows：40px;`指每列的宽度为40px。
-		- `grid-template-rows:40px 1fr;`指第一列的宽度为40px，其余每列占除去40px之外的空间，每列占据1份。
-	-   `grid-template-columns`
+		- `grid-template-rows:40px 1fr;`指第一行的宽度为40px，其余每列占除去40px之外的空间，每行占据1份。
+	-   `grid-template-columns`定义容器的列属性
+		- `grid-template-columns:1 / 3;`是指从盒子的左边的起始边线开始，指跨越了几条纵向边线。
+			- `grid-column-start:`指从盒子的边从第几条纵线开始计算。
+				- `number；`
 	-  `grid-template-areas`
+
+设置网格属性：display:grid/inline-grid
+设置列的宽度：grid-template-columns:
+	可以单独设置每一列的宽度
+	grid-template-columns:repeat(number,width)：第一个数为列数，第二个数为每一列的宽度。
+	grid-template-columns:1fr, 2fr, 3fr;每一列占父元素宽度的比例。
+	grid-template-columns:100px, 2fr, 3fr;第一列是具体像素值，父元素减去第一列的宽度后平均分成5份，第二列占2份，第三列占3份。
+grid-template-rows:设置行的高度
+grid-template-areas:指定区域
+grid-areas：;写给子元素的
