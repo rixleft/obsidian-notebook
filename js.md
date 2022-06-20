@@ -127,26 +127,24 @@ COMFIRM("Hello，JavaScript！");   // 错误
 ```
 ### 5.JS的进制表示
 在JS中可以表示不同进制的数字  
-16进制的数字，则需要以0x开头  0x17=16+7=23
-8进制的数字，则需要以0开头      0
-2进制的数字，则需要以0b开头  
-得看浏览器支持  
-使用  
-十六进制  
-num = 0x18;  
-num = 0xcf;  
-num = 0xAacf;  
-八进制数字  
-num = 016;  
-二进制数字  
-num = 0b1010;  
-注意  
-"010"这种[字符串](https://so.csdn.net/so/search?q=%E5%AD%97%E7%AC%A6%E4%B8%B2&spm=1001.2101.3001.7020)，有些浏览器会当成8进制解析，有些会当成10进制解析  
-可以在parseInt()或parseFloat中传递一个第二个参数，来指定数字的进制
+16进制的数字，0-9 a-f a=10 b=11 c=12 d=13 e=14 f=15 以0x开头  0x17=16+7=23
+8进制的数字，以00开头    0017=8+7=15
+2进制的数字，以0b开头    0b11=2+1=3 
+```javascript
+	    console.log(+"h")  //NaN  是一个数字字面量 但是不能不表示一个数字。
+	    console.log(1.7976931348623157e+308) //计算机能够表示的最大数字
+        console.log(1.8976931348623157e+308) //Infinity
+        console.log(-1.7976931348623157e+308) //计算机能够表示的最小数字
+        console.log(-1.8976931348623157e+308) //-Infinity
+        console.log(0/1) //0
+        console.log(0/-1) //-0
+        console.log(1/0) //Infinity
+        console.log(1/-0) //-Infinity
+        console.log(-1/0) //-Infinity
+```
 
->     str = "070";  
-> // str= parseInt(str,10);  
-> str = Number(str);  
->               
-> console.log(typeof str);  
-> console.log(str);
+## 变量
+var 变量（variable）
+	var  a 只定义未赋值，打印结果undefined，
+	var  a = number 定义的同时赋值，打印的结果就是等号右边的值。
+	var a = number1 , b = number2 可同时定义多个变量。
