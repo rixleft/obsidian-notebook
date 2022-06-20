@@ -144,7 +144,14 @@ COMFIRM("Hello，JavaScript！");   // 错误
 ```
 
 ## 变量
-var 变量（variable）
-	var  a 只定义未赋值，打印结果undefined，
-	var  a = number 定义的同时赋值，打印的结果就是等号右边的值。
-	var a = number1 , b = number2 可同时定义多个变量。
+#### var 变量（variable）
+- var  a 只定义未赋值，打印结果undefined，
+- var  a = number 定义的同时赋值，打印的结果就是等号右边的值。
+- var a = number1 , b = number2 可同时定义多个变量。
+
+#### 变量的提升
+```javascript
+	var name    // 声明变量
+	name = 'John Doe' // 赋值操作
+
+```
