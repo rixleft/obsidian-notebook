@@ -157,3 +157,12 @@ COMFIRM("Hello，JavaScript！");   // 错误
 ```
 
 ### 数据类型
+- 基本数据类型
+	- 字符串 数字（进制数 浮点数 科学计数法 NaN） 布尔值（true false）undefined null
+- 复杂数据类型
+	- 函数 对象 数组
+- 如何判断数据类型
+	- 通过typeof关键字 
+	- 语法 typeof 你要判断的数据 或者  typeof （你要判断的数据）
+	- 注意:typof 只能判断基本数据类型
+	- 如果多次使用typeof的结果是string
