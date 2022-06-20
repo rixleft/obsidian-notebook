@@ -36,14 +36,68 @@
 			-  `grid-column-end:`指从盒子的边从第几条纵线结束计算。
 				- `number;`可以为负值。
 				- `span number;`也可以写跨越了几列。
-	-  `grid-template-areas`
-
-设置网格属性：display:grid/inline-grid
-设置列的宽度：grid-template-columns:
-	可以单独设置每一列的宽度
-	grid-template-columns:repeat(number,width)：第一个数为列数，第二个数为每一列的宽度。
-	grid-template-columns:1fr, 2fr, 3fr;每一列占父元素宽度的比例。
-	grid-template-columns:100px, 2fr, 3fr;第一列是具体像素值，父元素减去第一列的宽度后平均分成5份，第二列占2份，第三列占3份。
-grid-template-rows:设置行的高度
-grid-template-areas:指定区域
-grid-areas：;写给子元素的
+	-  `grid-template-areas` 给建立的二维空间划分区域，
+- `grid-areas:`是给子元素添加的属性，使得区域可以一一对应。
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        display: grid;
+        width: calc(5 * 60px);
+        height: calc(5 * 60px);
+        padding: 60px;
+        grid-template-rows: repeat(5, 60px);
+        grid-template-columns: repeat(5, 60px);
+        grid-template-areas: 
+        ".  red  red  red  . "
+		"yellow .  .  .  . "
+		"green  .  black  black  . "
+		"green  .  .  .  blue "
+		".  pink pink pink . ";
+    }
+    .red {
+        grid-area: red;
+        background: red;
+    }
+    .yellow {
+        grid-area: yellow;
+        background: yellow;
+    }
+    .green {
+        grid-area: green;
+        background: green;
+    }
+    .pink {
+        grid-area: pink;
+        background: pink;
+    }
+    .blue {
+        grid-area: blue;
+        background: blue;
+    }
+    .black {
+        grid-area: black;
+        background: black;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="red"></div>
+        <div class="yellow"></div>
+        <div class="green"></div>
+        <div class="pink"></div>
+        <div class="blue"></div>
+        <div class="black"></div>
+    </div>
+</body>
+</html>
+```
+#### 效果
+![[grid.png]]
