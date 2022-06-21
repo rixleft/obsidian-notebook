@@ -45,7 +45,18 @@
 	</script>
 ```
 如果加号放在后边 左右两边有一个是字符串就会做字符串的拼接。
-
+```javascript
+	<script>
+	   console.log("1" + 1); //11
+       console.log(+"1" + 1); //2
+       console.log(1 + (+"1")); //2
+       console.log(1 + true); //2
+       console.log(1 + "true"); //1true
+       console.log(1 + undefined); //NaN
+       console.log(1 + undefined); //1undefined
+       console.log(1 + NaN); //NaN
+	</script>
+```
 - parseInt 严格区分大小写，将字符串转换为整数，小数点后会被省略。
 ```javascript
 	<script>
