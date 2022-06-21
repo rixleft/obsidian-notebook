@@ -17,9 +17,12 @@
 	var str = "10";
 	var str = "abc"
 	var str = 10 + "";
+	var str = null + "";
+	var str = undefined + "";
 	var str = "" + 10;
 	var str = abc + ""; //会报错
 	var str = "" + abc; //会报错
+	console.log(typeof str)
 	</script>
 ```
 ### 转数字
