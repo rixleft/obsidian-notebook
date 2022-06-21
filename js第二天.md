@@ -8,3 +8,13 @@
 	- 语法 typeof 你要判断的数据 或者  typeof （你要判断的数据）
 	- 注意:typof 只能判断基本数据类型
 	- 多次使用typeof的结果是string
+
+### 转字符串
+- 添加引号
+```javascript
+	<script>
+	var str = "10";
+	var str = 10 + "";
+	</script>
+```
+- 与字符串做加法
