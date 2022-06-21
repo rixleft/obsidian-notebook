@@ -147,6 +147,7 @@ COMFIRM("Hello，JavaScript！");   // 错误
 - var a = number1 , b = number2 可同时定义多个变量。
 
 #### 变量的提升
+JavaScript会将所有的变量的声明提到所有代码的前边，变量提升只提升的是声明不会提升值。
 ```javascript
 	var name    // 声明变量
 	name = 'John Doe' // 赋值操作
@@ -154,5 +155,22 @@ COMFIRM("Hello，JavaScript！");   // 错误
 ```
 
 ### 计算小数
-小数计算时不能直接加减乘除，因为精度不够，并不能得到准确答案，所以得先扩大倍数得出结果再缩
+小数计算时不能直接加减乘除，因为精度不够，并不能得到准确答案，所以得先扩大倍数得出结果再缩小倍数。
+```javascript
+	<script>
+        console.log(1+2)//结果为3
+        console.log(.1+.2) //结果并不为0.3
+        console.log((0.1 * 10 + 0.2 * 10)/10)
+    </script>
+
+```
+
+数学运算时，会将其他进制数计算的结果转换为十进制。
+```JavaScript
+	<script>
+        console.log(10*2)  //结果为20
+        console.log(0o11*2) //结果为18
+        console.log(0x11*2) //结果为34
+    </script>
+```
 
