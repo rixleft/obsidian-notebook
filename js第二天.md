@@ -29,7 +29,9 @@
 	- false 会被转换为0
 ```javascript
 	<script>
-	var num = "10"
+	var num = "10";
+	var res = Number(num);
+	console.log(res);
 	
 	</script>
 ```
