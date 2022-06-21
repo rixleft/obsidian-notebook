@@ -26,22 +26,30 @@
 	</script>
 ```
 ### 转数字
-- Number 必须是纯数字或者null，true，false。
+- Number 必须是纯数字或者null，true，false。首字母必须大写。
 	- null 会被转换为0,
 	- true 会被转换为1
 	- false 会被转换为0
 ```javascript
 	<script>
 	var num = "10";
+	var num = null;  //0
+	var num = true;  //1
+	var num = false;  //0
 	var res = Number(num);
 	console.log(res);
-	
 	</script>
 ```
-- parseInt
+- parseInt 严格区分大小写，将字符串转换为整数，小数点后会被省略。
 ```javascript
 	<script>
-	
+	var num = "10"; //10
+	var num = "10h";  //10
+	var num = "10.9h";//10
+	var num = "h10"; //NaN
+	var num = unll; //NaN
+	var res = parseInt(num);
+	console.log(res);
 	</script>
 ```
 - parseFloat
