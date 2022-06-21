@@ -176,7 +176,14 @@
 - ！非 取反 
 
   **逻辑运算符先与后或**，值并不一定都是true和false。
-  
+  ```javascript
+	<script>
+	console.log(5&&4)  //输出为后面的值
+    console.log(5||4)  //输出为前面的值
+    console.log(false||4)  //4（数字默认为true）
+    console.log(false&&4)  //false
+	</script>
+```
 
 ##### 短路
 如果参与逻辑运算的表达式，第一个式子就能决定整个逻辑表达式的结果，那么就不会去算第二个式子的值，这个就是短路运算。
