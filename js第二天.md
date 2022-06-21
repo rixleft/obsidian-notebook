@@ -143,7 +143,7 @@
 | >=   | 大于等于号                         |
 | <=   | 小于等于号                         |
 | ==   | 等于号，值相等就是true             |
-| ===  | 全等号，除了值相等，类型必须也相等 |
+| ===  | 全等号，绝对相等，除了值相等，类型必须也相等 |
 | !=   | 非等号                             |
 | !==  | 非全等                                   |
 比较运算符会把其他数据类型转换成number数据类型后再比较。
@@ -156,6 +156,7 @@
     console.log(false == 0);        //true
     console.log(false == "");       //true
     console.log(Number(false));       //0
+    console.log(NaN === NaN);        //flase
     console.log(NaN == NaN);        //false
     console.log(undefined == null);     //true
     console.log(Number(NaN));       //NaN
@@ -169,6 +170,10 @@
 - 字符串和布尔值比较时，会把字符串和布尔值都通过 `Number()` 转成数字再进行比较  
 - **在javascript中有两种特殊情况无视规则：1. `null == undefined`； 2. `NaN`和谁都不相等，包括他自己。**
 
+#### 逻辑运算符
+- &&  与 并且
+- || 或 或者
+- ！非 取反
   
 ### Math方法
 - 1.random：随机数的值0~1之间，不包含1
