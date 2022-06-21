@@ -11,10 +11,16 @@
 
 ### 转字符串
 - 添加引号
+- 与字符串做加法
 ```javascript
 	<script>
 	var str = "10";
+	var str = "abc"
 	var str = 10 + "";
+	var str = "" + 10;
+	var str = abc + ""; //会报错
+	var str = "" + abc; //会报错
 	</script>
 ```
-- 与字符串做加法
+### 转数字
+- Number
