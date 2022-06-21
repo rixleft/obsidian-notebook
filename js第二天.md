@@ -71,7 +71,13 @@
 ```
 一个数代表将这个数转换成对应的数字类型，两个数时，第一个值代表要转换的数，第二个值代表要转换时使用的进制数。
 ```javascript
-
+	<script>
+        console.log(parseInt(9,10))  //十进制 0和10都可以表示十进制  值为9
+        console.log(parseInt(11,8)) //八进制  值为9
+        console.log(parseInt(11,16)) //八进制  值为17
+        console.log(parseInt(11,36)) //八进制  值为37
+        console.log(parseInt(11,37)) //八进制  值为NaN 
+     </script>
 ```
 - parseFloat
 ```javascript
@@ -137,3 +143,18 @@
 - **在javascript中有两种特殊情况无视规则：1. `null == undefined`； 2. `NaN`和谁都不相等，包括他自己。**
 
   
+### Math方法
+- 1.random：随机数的值0~1之间，不包含1
+- 2.sqrt 开平方根
+- 3.pow 次幂数
+- 4.PI  π
+| 属性    | 描述                            |
+| ------- | ------------------------------- |
+| E       | 返回算术常量e，即自然对数的底数 |
+| LN2     | 返回 2 的自然对数               |
+| LN10    | 返回 10 的自然对数              |
+| LOG2E   | 返回以2 为底的e的对数           |
+| LOG10E  | 返回以10 为底的e的对数          |
+| PI      | 返回圆周率                      |
+| SQRT1_2 | 返回2的平方根的倒数                                |
+| SQRT2   |                                 |
