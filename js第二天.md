@@ -23,4 +23,25 @@
 	</script>
 ```
 ### 转数字
-- Number
+- Number 必须是纯数字或者null，true，false。
+	- null 会被转换为0,
+	- true 会被转换为1
+	- false 会被转换为0
+```javascript
+	<script>
+	var num = "10"
+	
+	</script>
+```
+- parseInt
+```javascript
+	<script>
+	
+	</script>
+```
+- parseFloat
+```javascript
+	<script>
+	
+	</script>
+```
