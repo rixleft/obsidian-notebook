@@ -109,4 +109,20 @@
 	- `undefined`会被转换为 `NaN`，  
 	- `null`会转换为数字 `0`
 
+比较运算符会把其他数据类型转换成number数据类型后再比较。
+```javascript
+    console.log("2" > 10);      //false
+    console.log("a" > 10);      //false
+    console.log(10 > "a");      //false
+    console.log(Number("a"));      //NaN
+    console.log("2" > "10");        //true    '
+    console.log(false == 0);        //true
+    console.log(false == "");       //true
+    console.log(Number(false));       //0
+    console.log(NaN == NaN);        //false
+    console.log(undefined == null);     //true
+    console.log(Number(NaN));       //NaN
+    console.log(Number(undefined));     //NaN
+    console.log(Number(null))       //0
+```
   
