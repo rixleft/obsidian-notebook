@@ -37,9 +37,15 @@
 	var num = true;  //1
 	var num = false;  //0
 	var res = Number(num);
+	var res = +str //类型转换为Number
+	var res = str-0 //类型转换为Number
+    var res = str*1 //类型转换为Number
+    var res = str/1 //类型转换为Number
 	console.log(res);
 	</script>
 ```
+如果加号放在后边 左右两边有一个是字符串就会做字符串的拼接。
+
 - parseInt 严格区分大小写，将字符串转换为整数，小数点后会被省略。
 ```javascript
 	<script>
@@ -55,6 +61,12 @@
 - parseFloat
 ```javascript
 	<script>
-	
+	var num = "10"; //10
+	var num = "10h";  //10
+	var num = "10.9h";//10.9
+	var num = "h10"; //NaN
+	var num = unll; //NaN
+	var res = parseInt(num);
+	console.log(res);
 	</script>
 ```
