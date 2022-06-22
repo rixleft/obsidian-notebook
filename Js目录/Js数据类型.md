@@ -198,9 +198,28 @@
 |`%=`|举例：`a%=5等价于a=a%5`|
 |`a++`|后置++，先赋值再自身+1|
 |`++a`|前置++，先自身+1再赋值|
-|`a--`|自身减少1 后置--，先赋值再自身-1|
-
-
+|`a--`|后置--，先赋值再自身-1|
+|`--a`|前置--，先自身+1再赋值|
+```javascript
+	<script>
+	var a=10
+    var b=a++
+    console.log(a)  //11
+    console.log(b)  //10
+    var i=10
+    var j=++i
+    console.log(i)  //11
+    console.log(j)  //11
+    var a=10
+	var b=a--
+	console.log(a)  //9
+	console.log(b)  //10
+	var i=10
+	var j=--i
+	console.log(i)  //9
+	console.log(j)  //9
+	</script>
+```
 
 
 ### Math方法
