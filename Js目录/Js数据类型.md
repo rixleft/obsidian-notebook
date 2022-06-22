@@ -176,7 +176,7 @@
 - || 或 或者 左右两边只要有一个是true就是true
 - ！非 取反 
 
-  **逻辑运算符先与后或**，值并不一定都是true和false。
+  **逻辑运算符先与后或**，值并不一定都是true和false。也可能是数字或者字符串。
   ```javascript
 	<script>
 	console.log(5&&4)  //输出为后面的值
