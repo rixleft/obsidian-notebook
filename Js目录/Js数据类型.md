@@ -121,7 +121,7 @@
 	</script>
 ```
 **算术运算符 > 比较运算符 > 逻辑运算符 > 赋值运算符**
-  
+  贴身的（！ ++  --）优先级大于算术运算符。
 ```javascript
     console.log(1 + true);      //2
     console.log(1 + "true");        //"1true"
