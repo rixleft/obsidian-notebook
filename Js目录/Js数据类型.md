@@ -242,6 +242,35 @@
     </script>
 ```
 
+#### 三元运算
+- 三元运算符又称为三目运算符。      
+	 - 语法格式   (条件表达式)?表达式1：表达式2；
+	 - 如果条件为true，运算后的结果是表达式1；
+	 - 如果条件为false，运算后的结果是表达式2；
+
+```js
+	<script>
+	(关系表达式) ? 表达式1 : 表达式2;
+	int x = 10;
+	int y = 5;
+	int z;
+	如果x大于y 则是true，将x赋值给z；
+	如果x不大于y 则是false，将y赋值给z；
+	z = (x > y) ? x : y;
+	System.out.println("x = " + x);
+
+	获取三个整数中的最大值
+	int a = 10;
+	int b = 20;
+	int c = 30;
+	先比较任意两个数的值，找出这两个数中的最大值
+	int temp = (a > b) ? a : b;
+	用前两个数的最大值与第三个数比较，获取最大值
+	int max = (temp > c) ? temp : c;
+	System.out.println("max = " + max);
+
+	</script>
+```
 ### Math方法
 - 1.random：随机数的值0~1之间，不包含1
 - 2.sqrt 开平方根
