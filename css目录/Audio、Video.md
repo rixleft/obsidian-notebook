@@ -1,15 +1,17 @@
 # Video
 支持的格式 mp4 ogg webm
 
-| 属性     | 描述         |
-| -------- | ------------ |
-| coltrols | coltrols     |
-| width    | 单位：像素   |
-| height   | 单位：像素   | 
-| poster   | 封面图片地址 |
-| autoplay | 自动播放     |
-| muted    | 静音     |
-| loop     | 循环播放     |
+| 属性     | 描述               |
+| -------- | ------------------ |
+| autoplay | 自动播放           |
+| coltrols | coltrols           |
+| width    | 单位：像素         |
+| height   | 单位：像素         |
+| poster   | 封面图片地址       |
+| muted    | 静音               |
+| loop     | 循环播放           |
+| preload  | 是否等加载完再播放 |
+| src      | 视频地址           |
 ```html
 		<!--方法一-->
 	<video src="地址"  width="" poster="" controls autoplay muted loop>
