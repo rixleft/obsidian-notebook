@@ -158,6 +158,7 @@
     console.log(Number(false));       //0
     console.log(NaN === NaN);        //flase
     console.log(NaN == NaN);        //false
+    //JavaScript的规定，NaN表示的是非数字，但是这个非数字也是不同的，因此，NaN 不等于 NaN，并且两个NaN永远不可能相等。我们都知道NaN的意思是Not a Number，那么不是数字的字符肯定不是一个，而是一个范围，一个集合，就好像A不是数字，B也不是数字，但是A肯定不是B一样。所以综上NaN其实是不等于它自身的。
     console.log(undefined == null);     //true
     console.log(Number(NaN));       //NaN
     console.log(Number(undefined));     //NaN
@@ -224,3 +225,4 @@
 | acos(x)          | 返回x的反余弦值                               |
 | atan(x)          | 以介于-π/2与π/2之间的数值返回x的反正切值      |
 | atan2(y,x)       | 返回从x轴到点(x,y)的角度（介于-π/2与π/2之间） |
+
