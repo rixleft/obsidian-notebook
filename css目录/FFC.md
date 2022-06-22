@@ -23,7 +23,7 @@
 	- `space-around`：每个子盒子两侧的间隔相等。所以，子盒子之间的间隔是边框间隔的两倍。
 	- `space-evenly`：每个子盒子之间的间隔相等，子盒子与边界之间也有间隔，同样是一倍间距。
 	- ![[justify-content.png]]
-- `align-items`属性定义项目在侧轴上如何对齐。
+- `align-items`属性定义项目在侧轴（交叉轴）上如何对齐。
 	-  `flex-start`：侧轴的起点对齐，侧轴如果是Y轴则是从上方对齐，侧轴如果是X轴则是从左侧对齐。
 	-  `flex-end`：侧轴的终点对齐。侧轴如果是Y轴则是从下方对齐，侧轴如果是X轴则是从右侧对齐。
 	-  `center`：侧轴的中点对齐。
@@ -50,19 +50,14 @@
 -   `flex:`属性是`flex-grow`, `flex-shrink` 和 `flex-basis`的简写，默认值为`0 1 auto`。后两个属性可选。
 	- 大多数情况下可以用预定义的简写形式。在这个教程中你可能经常会看到这种写法，许多情况下你都可以这么使用。下面是几种预定义的值：
 	-   `flex: initial`
+		- `flex: initial` 是把 flex 元素重置为 Flexbox 的初始值，它相当于 `flex: 0 1 auto`。在这里 `flex-grow` 的值为 0，所以 flex 元素不会超过它们 `flex-basis` 的尺寸。`flex-shrink` 的值为 1, 所以可以缩小 flex 元素来防止它们溢出。`flex-basis` 的值为 `auto`. Flex 元素尺寸可以是在主维度上设置的，也可以是根据内容自动得到的。
 	-   `flex: auto`
+		- `flex: auto` 等同于 `flex: 1 1 auto`；和上面的 `flex:initial` 基本相同，但是这种情况下，flex 元素在需要的时候既可以拉伸也可以收缩。
 	-   `flex: none`
-	-   `flex: <positive-number>`
-
-`flex: initial` 是把 flex 元素重置为 Flexbox 的初始值，它相当于 `flex: 0 1 auto`。在这里 `flex-grow` 的值为 0，所以 flex 元素不会超过它们 `flex-basis` 的尺寸。`flex-shrink` 的值为 1, 所以可以缩小 flex 元素来防止它们溢出。`flex-basis` 的值为 `auto`. Flex 元素尺寸可以是在主维度上设置的，也可以是根据内容自动得到的。
-
-`flex: auto` 等同于 `flex: 1 1 auto`；和上面的 `flex:initial` 基本相同，但是这种情况下，flex 元素在需要的时候既可以拉伸也可以收缩。
-
-`flex: none` 可以把 flex 元素设置为不可伸缩。它和设置为 `flex: 0 0 auto` 是一样的。元素既不能拉伸或者收缩，但是元素会按具有 `flex-basis: auto` 属性的 flexbox 进行布局。
-
-你在教程中常看到的 `flex: 1` 或者 `flex: 2` 等等。它相当于`flex: 1 1 0`。元素可以在`flex-basis`为 0 的基础上伸缩。
-	- 该属性有两个快捷值：`auto` (`1 1 auto`) 和 `none` (`0 0 auto`)。
-	- 建议优先使用这个属性，而不是单独写三个分离的属性，因为浏览器会推算相关值。
+		- `flex: none` 可以把 flex 元素设置为不可伸缩。它和设置为 `flex: 0 0 auto` 是一样的。元素既不能拉伸或者收缩，但是元素会按具有 `flex-basis: auto` 属性的 flexbox 进行布局。
+	-   `flex: <positive-number>`(正数)
+		- `flex: 1` 或者 `flex: 2` 等等。它相当于`flex: 1 1 1`，`flex: 1 1 2`。改变的是`flex-basis`的值。
+	- ==建议优先使用这个属性，而不是单独写三个分离的属性，因为浏览器会推算相关值。==
 -   `align-self:`属性允许单个项目有与其他项目不一样的对齐方式，可覆盖`align-items`属性。默认值为`auto`，表示继承父元素的`align-items`属性，如果没有父元素，则等同于`stretch`。
 	-  `flex-start`：侧轴的起点对齐，侧轴如果是Y轴则是从上方对齐，侧轴如果是X轴则是从左侧对齐。
 	-  `flex-end`：侧轴的终点对齐。侧轴如果是Y轴则是从下方对齐，侧轴如果是X轴则是从右侧对齐。
