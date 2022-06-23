@@ -40,4 +40,37 @@
 - 语法三：if(条件) {执行语句} else if（条件）{执行语句} 。。。else {执行语句}
 只要有一个条件符合就会执行对应条件后边的语句   如果条件都不符合 执行else
 
-         注意：如果{}里只有一条执行语句 可以省略{} （不建议）
+注意：如果{}里只有一条执行语句 可以省略{} （不建议）
+
+
+
+
+
+
+
+#### switch
+```js
+<script type="text/javascript">
+        var now = new Date();    //获取当天系统日期
+        var day = now.getDay();   //获取当天是星期几
+        var week;
+        switch(day)
+        {
+            case 1:
+                week = "星期一"; break;
+            case 2:
+                week = "星期二"; break;
+            case 3:
+                week = "星期三"; break;
+            case 4:
+                week = "星期四"; break;
+            case 5:
+                week = "星期五"; break;
+            case 6:
+                week = "星期六"; break;
+            default:
+                week = "星期日";
+        }
+        document.write("今天是"+week);    //输出今天是星期几
+    </script>
+```
