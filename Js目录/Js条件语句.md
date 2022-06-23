@@ -49,12 +49,18 @@
 
 
 #### switch
+- switch(变量) {
+	case 条件1：执行语句;break;
+	case 条件2： 执行语句;break;}
+- 条件必须是全等，不论是数值还是数据类型。
+- 如果没有break关键词，代码会继续向下穿透，直到遇到break或者switch语句结束才能停止。
+- 适用于写具体的数值的情况。
 ```js
 <script type="text/javascript">
         var now = new Date();    //获取当天系统日期
         var day = now.getDay();   //获取当天是星期几
         var week;
-        switch(day)
+        switch(day)//可以内写表达式
         {
             case 1:
                 week = "星期一"; break;
