@@ -281,4 +281,22 @@
 | atan(x)          | 以介于-π/2与π/2之间的数值返回x的反正切值      |
 | atan2(y,x)       | 返回从x轴到点(x,y)的角度（介于-π/2与π/2之间） |
 
-|JS关键词|关键词|
+| JS关键词    | JS关键词  | JS关键词     |
+| ----------- | --------- | ------------ |
+| abstract    | boolean   | break        |
+| byte        | case      | catch        |
+| char        | class     | continue     |
+| default     | do        | double       |
+| else        | extends   | false        |
+| final       | finally   | float        |
+| for         | funtion   | goto         |
+| implenments | import    | in           |
+| instanceof  | interface | long         |
+| native      | new       | null         |
+| package     | private   | public       |
+| peturn      | short     | statice      |
+| super       | switch    | synchronized |
+| this        | throw     | typeof       |
+| true        | var       | void         |
+| while       | with      |              |
+` `
