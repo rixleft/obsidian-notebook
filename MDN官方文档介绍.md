@@ -16,7 +16,7 @@ MDN实际上是（Mozilla Developer Network）的缩写，它是一个汇集众�
 
 2004年，AOL关闭了一个受欢迎的开发者网站Netscape DevEdge。  DevEdge曾是一个重要的、有关互联网技术的数据源，它维护了网景浏览器、和诸如HTML和JavaScript技术的帮助文档、以及由业界和技术领导者（如丹尼·古德曼）所编写的文章。之前Mozilla组织的内容是放在这个网站上的。
 
-AOL关闭了网站，但是你这些资源不能全部都藏起来。然后，2005年，由Mozilla公司员工Deb Richardson领头，通过Mozilla基金会向AOL获取了DevEdge发布的内容，将他重新发布到Mozilla Developer Center网站，这个网站后来改名，也就是我们现在看到的MDN Web Docs。
+AOL关闭了网站，但是这些资源不能全部都藏起来。然后，2005年，由Mozilla公司员工Deb Richardson领头，通过Mozilla基金会向AOL获取了DevEdge发布的内容，将他重新发布到Mozilla Developer Center网站，这个网站后来改名，也就是我们现在看到的MDN Web Docs。
 
 2007年底，AOL决定停止网景浏览器的开发，并于2008年3月1日起停止安全更新和所有的技术支持，并建议用户转移使用Firefox浏览器。就此，名噪一时的网景公司彻底被尘封在历史的光阴中了。
 
