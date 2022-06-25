@@ -1,1 +1,1 @@
-MDN实际上是（Mozilla Developer Network）
+MDN实际上是（Mozilla Developer Network）的缩写，它是一个汇集众多Mozilla基金会产品和网络技术开发文档的免费网站。后来换了个名字叫MDN Web Docs。
