@@ -39,11 +39,11 @@
 - `transform-style: preserve-3d;`3d空间的透视效果
 ==`transform`的四个功能函数注意顺序不同值相同最终效果不同==
 先缩放再偏移和先偏移再缩放所达到的效果不同，因为先缩放，会以中心点为缩放基点，而先偏移，则以偏移后的中心点为缩放基点。
-### perspective（景深）
+### perspective（透视）
 - 两种写法
 	- `perspective:;`写给父元素
 	- `transform：perspective();`写给元素本身
-- **可通过`transform-origin:`属性更改景深基点，属性值可选择像素或方位名词——top,center,bottom,left,right等。**
+- **可通过`transform-origin:`属性更改透视基点，属性值可选择像素或方位名词——top,center,bottom,left,right等。**
 
 
 
