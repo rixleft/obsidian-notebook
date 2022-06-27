@@ -104,7 +104,7 @@
 1，不同script标签之间没有作用域，所有的script标签共同组成顶层作用域。
 
 2，上面的script标签中无法访问下面标签中声明的变量或函数，是因为js引擎，是按script标签分别依次解析的（可以通过延迟定时器来验证）。
-
+```js
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
@@ -176,6 +176,8 @@ console.log("这是最后一条输出信息");
 ​  
 </body>  
 </html>
+```
+
 
 ### **闭包**
 
@@ -194,7 +196,7 @@ console.log("这是最后一条输出信息");
 2，存在闭包关系的函数，函数本身和里面的局部变量无法被垃圾回收机制自动回收。
 
 3，闭包通常只会有两层函数嵌套，过多的函数嵌套会增加内存溢出的风险。
-
+```js
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
@@ -206,10 +208,10 @@ console.log("这是最后一条输出信息");
 <body>  
     
 <script>  
-​  
+ 
 function fn1() { // 父函数  
   var a = 10;  
-​  
+ 
   function fn2() { // 子函数  
     var b = 20;  
     // 虽然有函数嵌套 ，但子函数中并没有引用父函数中的任何函数或变量，因此不称为闭包。  
@@ -218,10 +220,10 @@ function fn1() { // 父函数
   fn2();  
 }  
 // fn1();  
-​  
+
 function fn3() {  
   var c = 1;  
-​  
+
   function fn4() {  
     var d = 100;  
     // 虽然引用了父函数中的变量，但没有被作为返回值返回，因此也不称为闭包。  
@@ -230,11 +232,11 @@ function fn3() {
   fn4();  
 }  
 // fn3();  
-​  
-​  
+ 
+ 
 // function fn5() {  
 //   var e = 1;  
-​  
+
 //   function fn6() {  
 //     // 闭包函数：   1，引用了父级的变量   2，被父函数作为返回值返回  
 //     console.log(e);   
@@ -243,11 +245,11 @@ function fn3() {
 // }  
 // var innerFn = fn5();  
 // innerFn(); //1;  
-​  
+ 
 // 简化写法  
 function fn5() {  
   var e = 1;  
-​  
+ 
   // 作为返回值的函数，不需要命名  
   return function () {  
     console.log(e);   
@@ -255,13 +257,13 @@ function fn5() {
 }  
 // var innerFn = fn5();  
 // innerFn(); //1;  
-​  
+
 // 由于 innerFn 会被调用多少次无法预知，所以JS引擎必须保证局部变量e和return后面的匿名函数一直存在，无法被垃圾回收机制回收。  
-​  
-​  
+ 
+ 
 // 闭包实例  
 // 1， 计数器  
-​  
+
 // 用来创建计数器的函数  
 function counter() {  
   var num = 0;  
@@ -270,12 +272,12 @@ function counter() {
     return num;  
   }  
 }  
-​  
+  
 // 计数器1  
 var c1 = counter();  
 // 计数器2  
 var c2 = counter();  
-​  
+
 // 多个计数器之间互不干扰  
 console.log( c1() ); // 1  
 console.log( c1() ); // 2  
@@ -284,32 +286,32 @@ console.log( c2() ); // 2
 console.log( c2() ); // 3  
 console.log( c2() ); // 4  
 console.log( c1() ); // 3   
-​  
-​  
+ 
+ 
 // 2，谎报年龄  
 // 输出年龄比实际年龄大或小  
-​  
+
 // 用来创建不同的人物  
 function faker(age) { // age :  真实年龄  
   return function(num) { // num : 谎报的岁数    正数： 比实际年龄大     负数： 比实际年龄小  
     return age + num;  
   }  
 }  
-​  
+ 
 // xiaoming 实际年龄 20  
 var xiaoming = faker(20);  
 // 谎报年龄，比实际年龄大5岁  
 console.log(xiaoming(5));  
-​  
+ 
 // xiaohong 实际年龄 20  
 var xiaohong = faker(20);  
 // 谎报年龄，比实际年龄小5岁  
 console.log(xiaohong(-5));  
-​  
+
 </script>  
-​  
 </body>  
 </html>
+```
 
 **垃圾回收机制：**
 
@@ -321,6 +323,7 @@ js 在执行过程中，会自动将不再使用的变量或函数进行销毁�
 
 3，被外部调用过的闭包函数，产生的局部变量或局部函数不会被回收，因为随时有可能会被再次调用。
 
+```js
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
@@ -330,12 +333,12 @@ js 在执行过程中，会自动将不再使用的变量或函数进行销毁�
   <title>Document</title>  
 </head>  
 <body>  
-​  
+
 <script>  
-​  
+
 function fn1() {  
   var num = 10;  
-​  
+
   function fn2() {  
     console.log('hello world!');  
   }  
@@ -345,12 +348,12 @@ function fn1() {
 // 第一次调用，声明一个局部变量 num 和 局部函数 fn2  
 // fn1();   
 // 第一次调用完成之后， num 和 fn2 不会再被使用了， 垃圾回收机制会将它们回收。  
-​  
+ 
 // 第二次调用，会声明一个新的局部变量 num 和 局部函数 fn2  
 // fn1();   
 // 第二次调用完成之后， 新的 num 和 fn2 也会被垃圾回收机制回收。  
-​  
-​  
+ 
+ 
 function counter() {  
   var num = 1;  
   return function () {  
@@ -358,22 +361,24 @@ function counter() {
     return num;  
   }  
 }  
-​  
+  
 // 调用 counter ，声明 num 和 匿名函数，并将匿名函数返回  
 var c1 = counter();  
-​  
+  
 // 调用匿名函数，让 num 自增  
 c1();  
-​  
+ 
 // 因为不确定 c1 会被调用多少次，垃圾回收机制无法回收 num 和 匿名函数  
 c1();  
 c1();  
 c1();  
-​  
+ 
 </script>  
-​  
+ 
 </body>  
 </html>
+```
+
 
 ### **即时调用函数** – IIFE
 
@@ -396,6 +401,7 @@ IIFE 是一个在定义时就会立即执行的函数，也叫自执行函数，
 2，IIFE 函数不需要命名，也不会被声明提升。
 
 **IIFE 函数变体版：** 可以使用 ~ + - ! 等一元运算符实现变体版 IIFE 函数。
+```js
 
 // 位运算符版  
 ~function(形参) {  
@@ -416,8 +422,10 @@ IIFE 是一个在定义时就会立即执行的函数，也叫自执行函数，
 !function(形参) {  
   ...// 代码块;  
 }(实参);  
-​
+```
 
+
+```js
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
@@ -500,6 +508,8 @@ console.log(p1, p2, p3, p4);
 </script>  
 </body>  
 </html>
+```
+
 
 IIFE 函数会增加代码阅读难度，除非必要，不建议使用（如果没有理由来表明需要使用 IIFE 函数，那就不要使用它！）。
 
@@ -526,7 +536,7 @@ IIFE 函数会增加代码阅读难度，除非必要，不建议使用（如果
 4，数组的 typeof 值为 object。
 
 **引用类型：** 引用类型又称复杂数据类型。
-
+```js
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
@@ -623,6 +633,8 @@ console.log(arr);
 </script>  
 </body>  
 </html>
+```
+
 
 ### **数组的** **length** 属性
 
@@ -643,7 +655,7 @@ console.log(arr);
 2，如果修改之后的 length 值比原来的大，不足部分默认为空，不会产生任何新数据。
 
 3，通过 数组名称[数组名称.length - 1] 可以访问到数组最后一项。
-
+```js
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
@@ -675,6 +687,7 @@ console.log(arr);
 </script>  
 </body>  
 </html>
+```
 
 ### 数组方法
 
@@ -725,7 +738,7 @@ pop() / shift() : 返回值为被删除的值
 队列：push - shift（最后一个元素后进后出，第一个新元素先进先出）
 
 **案例：** ["春","夏","秋","冬"] 将数组最后一项移动到开头
-
+```js
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
@@ -805,6 +818,8 @@ console.log(arr);
 ​  
 </body>  
 </html>
+```
+
 
 #### 数组的合并方法（不修改原数组）
 
@@ -821,7 +836,7 @@ concat()
 2，参数可以是数组，也可以是普通字面量或变量。
 
 3，返回值是合并之后的新数组。
-
+```js
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
@@ -863,3 +878,4 @@ console.log(arr6);
 ​  
 </body>  
 </html>
+```
