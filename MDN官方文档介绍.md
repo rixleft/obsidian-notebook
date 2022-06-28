@@ -37,4 +37,4 @@ AOL关闭了网站，但是这些资源不能全部都藏起来。然后，2005�
   
   后来MDN团队将内容从 MySQL 数据库移动在 GitHub 存储库中，我们将使用 GitHub 的贡献工具和功能，实质上是将 MDN 从 Wiki 模型转移到拉取请求 (PR) 模型。这对于贡献来说要好得多，允许智能 linting、大规模编辑以及将 MDN 文档包含在您想要添加到的任何工作流程中（您可以直接在您喜欢的代码编辑器中编辑 MDN 源文件）。
   
- 
+ JavaScript目前是网页编程的唯一语言，目前，许多新项目大大扩展了它的用途，node.js使得Javascript可以用于后端的服务器编程，coffeeScript使你可以用python和ruby的语法，撰写Javascript。
