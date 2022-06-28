@@ -71,4 +71,6 @@
 | 10.“9”的 Unicode 编码为： | 57     | 39       | 
 
 vscode里查看编码：可以使用charCodeAt();
-console.log("我"。char)
+console.log('我'.charCodeAt()); //25105
+console.log('你'.charCodeAt()); //20320
+类型为number
