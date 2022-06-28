@@ -27,7 +27,7 @@ end: 结束提取的下标位置
 4，不指定参数，会复制整个数组。
 
 5，参数可以为负数，表示从后往前数位置（但start表示的位置必须在end之前）
-
+```js
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
@@ -68,6 +68,7 @@ console.log( arr.slice(4, -5) );
 </script>  
 </body>  
 </html>
+```
 
 #### 数组的添加、删除、替换（修改原数组）
 
@@ -98,7 +99,7 @@ console.log( arr.slice(4, -5) );
 **返回值：**
 
 添加、删除、替换操作的返回值都为包含被删除的值的数组，如果删除长度为0，则返回空数组
-
+```js
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
@@ -168,13 +169,14 @@ var arr = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
 ​  
 </body>  
 </html>
+```
 
 #### 数组排序（修改原数组）
 
 **reverse()**
 
 将数组顺序完全颠倒过来， 没有参数， 返回值为颠倒之后的新数组。
-
+```js
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
@@ -202,6 +204,7 @@ var arr = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
     
 </body>  
 </html>
+```
 
 **sort()**
 
@@ -228,7 +231,7 @@ sort() 方法会自动传递两个值给函数，函数内部需要对传入的�
 **注意：**
 
 指定的函数内部必须明确对 a, b 进行处理，直接返回数值会有兼容问题（ff 与 chrome）。
-
+```js
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
@@ -418,6 +421,7 @@ console.log(arr);
 ​  
 </body>  
 </html>
+```
 
 #### **数组合并为**字符串 （不修改数组）
 
@@ -438,7 +442,7 @@ console.log(arr);
 1，不指定参数，默认使用逗号作为连接符。
 
 2，null 与 undefined 会转成空字符串 ""
-
+```js
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
@@ -481,6 +485,8 @@ console.log(str2);
 </script>  
 </body>  
 </html>
+```
+
 
 ## 遍历数组
 
@@ -497,7 +503,7 @@ for 循环（常用）， while 循环
 **递归遍历：**
 
 利用 pop() 或 shift() 方法，需要使用slice() 复制，并要判断数组中是否有值。
-
+```js
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
@@ -566,6 +572,7 @@ loop(arr);
 ​  
 </body>  
 </html>
+```
 
 ## for 循环、数组与闭包的结合使用
 
@@ -685,6 +692,7 @@ arr[4](); // 4
 ​  
 </body>  
 </html>
+```
 
 ## 对象
 
