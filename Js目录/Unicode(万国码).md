@@ -74,3 +74,5 @@ vscode里查看编码：可以使用charCodeAt();
 console.log('我'.charCodeAt()); //25105
 console.log('你'.charCodeAt()); //20320
 类型为number
+
+范围0~65535
