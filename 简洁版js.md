@@ -60,4 +60,8 @@
 - 条件语句
 	- if(){} else{};
 	- switch() {case 条件1: 执行语句;break}
-	- 
+- 循环语句
+- for 
+- while
+- do while
+- for in (对象)
