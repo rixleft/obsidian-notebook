@@ -68,3 +68,5 @@
 - 函数 function name(){}
 	- 声明式定义
 	- 赋值式定义
+- arguments 函数内部的特殊对象
+	- 通过length属性可以获取arguments中保存的个数。外部无法使用。
