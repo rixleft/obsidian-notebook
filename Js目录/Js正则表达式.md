@@ -628,11 +628,12 @@ var re2 = /\d+/g;
   // console.log(/\s/.exec('af\r1214')); // '\r'
   // console.log(/\s/.exec('af\n1214')); // '\n'
 
-  // \S   匹配除空白字符之外的任意字符
-  console.log(/\s/.exec('af 1214')); // ' '
-  console.log(/\s/.exec('af\t1214')); // '\t'
-  console.log(/\s/.exec('af\r1214')); // '\r'
-  console.log(/\s/.exec('af\n1214')); // '\n'
+   // \S   匹配除空白字符之外的任意字符
+  var re = /\S/;
+  console.log(re.exec(' a1214')); // 'a'
+  console.log(re.exec('\tb1214')); // 'b'
+  console.log(re.exec('\rc1214')); // 'c'
+  console.log(re.exec('\nd1214')); // 'd'
 
   // \t   匹配制表符
   // \r   匹配回车符
