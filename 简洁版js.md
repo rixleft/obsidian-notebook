@@ -61,7 +61,10 @@
 	- if(){} else{};
 	- switch() {case 条件1: 执行语句;break}
 - 循环语句
-- for 
-- while 
-- do while
-- for in (对象)
+	- for 
+	- while 
+	- do while
+	- for in (对象)
+- 函数 function name(){}
+	- 声明式定义
+	- 赋值式定义
