@@ -15,7 +15,7 @@
 ```javascript
 	<script>
 	var str = "10";
-	var str = "abc"
+	var str = "abc";
 	var str = 10 + "";
 	var str = null + "";
 	var str = undefined + "";
