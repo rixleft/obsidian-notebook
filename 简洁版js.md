@@ -62,6 +62,6 @@
 	- switch() {case 条件1: 执行语句;break}
 - 循环语句
 - for 
-- while
+- while 
 - do while
 - for in (对象)
