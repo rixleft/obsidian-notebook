@@ -19,4 +19,24 @@
 	- parseInt();
 	- parseFloat();
 	- 数学运算符 `+ - * /`
-- Math
+- Math方法(**常用**) 严格区分大小写
+	- Math.random(x) 随机数
+	- Math.sqrt(x) 开方数
+	- Math.pow(x,y) 次幂数
+	- Math.PI()    π
+	- Math.exp(x) 返回e的x次方
+	- Math.ceil(x) 上取整
+	- Math.floor(x) 下取整
+- 数学运算符 
+	- + 加法
+	- -  减法
+	- *  乘法
+	-  /  除法
+	-  % 取余
+- 逻辑运算符
+	- && 与
+	-  ||  或
+	-   !   非
+- 比较运算符
+	- true
+	- 
