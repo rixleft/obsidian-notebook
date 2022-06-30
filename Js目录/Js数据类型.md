@@ -53,7 +53,7 @@
        console.log(1 + true); //2
        console.log(1 + "true"); //1true
        console.log(1 + undefined); //NaN
-       console.log(1 + undefined); //1undefined
+       console.log(1 + "undefined"); //1undefined
        console.log(1 + NaN); //NaN
 	</script>
 ```
