@@ -109,9 +109,16 @@
 	- JSON.parse(string) 将JSON字符串转换成对象或数组。
 - this 全局作用域中的this指向window对象。当函数属于某个对象时，this指向这个对象。
 - 数学方法 toFixed() 指定保留的小数位数。
-- 字符串方法
-	- length属性（只读）
+- 字符串方法（不修改原数组）
+	- length属性
 	- charAt(index) 获取指定位置上的字符
 	- charCodeAt(index)获取指定位置上字符的指定编码
-	- indexOf(str,index) 从左到右查找指定字符第一次出现的位置。
-	- lastIndexOf(str,index)从右到左查指定字符第一次出现的位置。
+	- indexOf(str,index) 从左到右查找指定字符第一次出现的位置，没有返回 -1。
+	- lastIndexOf(str,index)从右到左查找指定字符第一次出现的位置，没有返回 -1。
+	- String.fromCartCode(num1,num2....numN)根据字符编码，返回对应的字符。
+	- toUpperCase() 转换为大写
+	- toLowerCase() 转换为小写
+	- concat() 合并字符串
+	- split() 将字符串分隔为数组
+- 正则表达式
+	- 
