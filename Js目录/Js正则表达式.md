@@ -239,31 +239,56 @@ console.log(String.fromCharCode(23456,24356,26435,26871)); // '宠弤权棷'
 ```
 
 #### 范围获取类方法
-所有字符串方法都会产生新的字符串，并不修改原来的字符串。
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+<script>
 
-slice(start, end)从字符串中获取指定范围的子字符串。
-参数: start 开始位置  end 结束位置  
-返回值:获取到的子字符串
-1,  start值必须小于end (start位置在end之前)，否则返回空字符串
+  // var str = '北京前端开发有限公司';
 
-2，获取范围包括开始位置的字符，不包括结束位置的字符。
+  // 字符串的所有方法都不会修改原字符串的内容
 
-3, start, end可以为负数，表示从后往前数位置（但必须保证start位置在end之前)
+  // slice()  从字符串中提取指定范围的子字符串
+  // console.log( str.slice(2, 6) );
+  // 开始位置必须小于结束位置
+  // console.log( str.slice(6, 2) );
+  // 只设置一个参数：  从参数指定的位置开始，提取后面所有的字符
+  // console.log( str.slice(2) );
+  // 不设置参数， 复制整个字符串
+  // console.log( str.slice() );
+  // 可以接收负数参数，表示从后往前数位置
+  // console.log( str.slice(-8,-4) );
+  // console.log( str.slice(-4) );
 
-4，省略end表示从start开始提取后面所有字符，start,end都省略会复制所有字符。substring(start, end)功能与slice()方法相同
+  // console.log(str);
 
-参数:  start  开始位置  end  结束位置
-返回值:获取到的子字符串
-1，如果start > end，会交换两个参数位置再获取。
+  // substring(start, end)   与 slice() 方法功能相同
+  // console.log( str.substring(2, 6) );
+  // console.log( str.substring(2) );
+  // console.log( str.substring() );
+  // 与 slice() 方法的不同之处  1，不接收负数参数    2，提取前会比较两个参数的大小
+  // 不接收负数参数，所有的负数参数自动转换成0
+  // console.log( str.substring(-2, -6) );
+  // console.log( str.substring(2, -6) ); // 实际提取的是 0~ 2 的字符
+  // 在提取字符之前，会先比较两个参数的大小，如果第二个参数比第一个参数小，会先交换两个参数的位置，再提取
+  // console.log( str.substring(6, 2) );
 
-2，获取范围包括开始位置，不包括结束位置。
+  var str = '北京前端开发有限公司';
+  // substr(start, length)    不是标准方法，不推荐使用。
+  // 注意 第一个参数表示位置，第二个参数表示要提取的字符个数。
+  // console.log( str.substr(2, 4) );
+  // console.log( str.substr(-8, 4) );
 
-3, start, end都必须>=0，负数会自动转换为0。
-
-4，省略end表示从start开始提取后面所有字符，start,end都省略会复制所有字符。substr(start, length)从字符串中获取指定长度的子字符串。(非标准方法，不建议使用)
-start表示开始获取位置，length表示获取字符长度
-
-
+</script>
+</body>
+</html>
 
 
 #### 分割、合并及转换类方法
