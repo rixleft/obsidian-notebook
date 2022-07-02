@@ -77,7 +77,7 @@
 - git add .：添加当前目录的全部文件
 - git commit：提交
 	- git commit 之后会进入vim终端编辑器，按a或者i进入编辑模式，按Esc退出编辑模式，再输入`:wq` 英文状态的冒号和wirte,quit的缩写，代表保存并退出，按回车退出vim终端编辑器。
-	- git commit -m "提交说明"  简写方法。
+	- git commit -m "提交说明"  简写方法。如 git commit -m"fix(test): change content"
 - git log 查看日志 唯一ID（哈希值）
 - 
 - 
