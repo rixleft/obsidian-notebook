@@ -66,3 +66,10 @@
 ### git
 想要从本地仓库提交文件到远程仓库，需要在本地仓库的文件夹内鼠标右击，点git bash命令，打开shell命令，先git status，查看状态，再git add，提交文件用git commit -m"提交信息"最后git push。
 
+命令：
+pwd：print work directory 显示工作目录位置
+ls：list file  当前目录下的所有文件
+cd：change directory 切换目录
+git version：版本号
+git config --global：全局配置
+git init：初始化
