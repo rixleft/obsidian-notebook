@@ -1,1 +1,0 @@
-想要从本地仓库提交文件到远程仓库，需要在本地仓库的文件夹内鼠标右击，点git bash命令，打开shell命令，先git status，查看状态，再git add，提交文件用git commit -m"提交信息"最后git push。

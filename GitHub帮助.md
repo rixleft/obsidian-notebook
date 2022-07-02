@@ -61,3 +61,8 @@
 
 对于新手来说，还有一个不错的选择 —— 通过 [GitHub 中文社区 (opens new window)](https://www.githubs.cn/)进行搜索。该站点整合了 GitHub 热门趋势、精选项目、排行榜、分类搜索等功能，同样可以帮助我们更快地找到想要的优质项目。
 
+
+
+### git
+想要从本地仓库提交文件到远程仓库，需要在本地仓库的文件夹内鼠标右击，点git bash命令，打开shell命令，先git status，查看状态，再git add，提交文件用git commit -m"提交信息"最后git push。
+
