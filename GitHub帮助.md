@@ -67,9 +67,20 @@
 想要从本地仓库提交文件到远程仓库，需要在本地仓库的文件夹内鼠标右击，点git bash命令，打开shell命令，先git status，查看状态，再git add，提交文件用git commit -m"提交信息"最后git push。
 
 命令：
-pwd：print work directory 显示工作目录位置
-ls：list file  当前目录下的所有文件
-cd：change directory 切换目录
-git version：版本号
-git config --global：全局配置
-git init：初始化
+- pwd：print work directory 显示工作目录位置
+- ls：list file  当前目录下的所有文件
+- cd：change directory 切换目录
+- git version：版本号
+- git config --global：全局配置
+- git init：初始化
+- git add 文件名：添加文件
+- git add .：添加当前目录的全部文件
+- git commit：提交
+	- git commit 之后会进入vim终端编辑器，按a或者i进入编辑模式，按Esc退出编辑模式，再输入`:wq` 英文状态的冒号和wirte,quit的缩写，代表保存并退出，按回车退出vim终端编辑器。
+	- git commit -m "提交说明"  简写方法。
+- git log 查看日志 唯一ID（哈希值）
+- 
+- 
+
+
+
