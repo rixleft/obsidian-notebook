@@ -1161,7 +1161,7 @@ var str2 = 'act react action react-native';
 
 **正则内部：**
 
-后面可以使用 \n（n为分组序号） 的方式引用前面分组的匹配结果，称为反向引用。
+后面可以使用 \n（n为大于0的数字，表示） 的方式引用前面分组的匹配结果，称为反向引用。
 
 （\n的匹配结果与分组结果完全相同）。
 
@@ -1193,9 +1193,23 @@ var str2 = 'act react action react-native';
 // 内部的分组反向引用
 var str1 = 'aaa123bcd444eee567fg';
 // 匹配所有字母组合
-// console.log(str1.match(/[a-z]+/g));  // ['aaa', 'bcd', 'eee', 'fg']
+ console.log(str1.match(/[a-z]+/g));  // ['aaa', 'bcd', 'eee', 'fg']
 // 匹配所有重复字母组合 比如 aaa
-// console.log(str1.match(/([a-z])\1+/g));  // ['aaa', 'eee']
+ console.log(str1.match(/([a-z])\1+/g));  // ['aaa', 'eee']
+
+var str = '1122 3434 5566 7879 9887';
+//匹配连续四个数字，第一和第二数字相同，第三和第四数字相同
+var res = str.match(/(\d)\1(\d)\2/g);
+console.log(res);
+//匹配连续四个数字，第一和第三数字相同，第二和第四数字相同
+var res = str.match(/(\d)(\d)\1\2/g);
+console.log(res);
+//匹配连续四个数字，第一和第三数字相同
+var res = str.match(/(\d)\d\1\d/g);
+console.log(res);
+//匹配连续四个数字，第一和第二数字相同，第三和第四数字相同，并将相同的数字只保留一个
+var res = str.replace(/(\d)\1(\d)\2/g, '$1$2');
+console.log(res);
 
 // 外部引用分组
 // 案例： 将 - 左右两边的单词位置互换
