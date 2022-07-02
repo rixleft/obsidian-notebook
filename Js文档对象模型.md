@@ -44,18 +44,58 @@ document 提供了所有 HTML 元素的访问和修改 API。
 
 document 中的常用属性：
 
-title : <title> 标签
+title : `<title>` 标签
 
-head: <head> 标签， 只读
+head: `<head>` 标签， 只读
 
-body: <body> 标签(框架集页面为 frameset标签)， 可以赋值，但值必须是一个 body 对象。
+body: `<body>` 标签(框架集页面为 frameset标签)， 可以赋值，但值必须是一个 body 对象。
 
-documentElement : <html> 标签，只读
+documentElement : `<html>` 标签，只读
 
-forms: 所有 <form> 标签的集合，只读
+forms: 所有 `<form>` 标签的集合，只读
 
-images: 所有 <img> 标签的集合， 只读
+images: 所有 `<img>` 标签的集合， 只读
 
-scripts: 所有 <script> 标签的集合，只读
+scripts: 所有 `<script>` 标签的集合，只读
 
 cookie: 与当前文档关联的 cookie 信息
+
+```js
+<script>
+//几个常用的唯一标签被当作属性保存在了document对象中
+console.log(document.head); // <head> 标签
+console.log(document.title); // <title> 标签
+console.log(document.body); // <body> 标签
+console.log(document.documentElement); // <html> 标签
+console.log(document.forms); // 所有 <form> 标签的集合
+console.log(document.images); // 所有 <img> 标签的集合
+console.log(document.scripts); // 所有 <script> 标签的集合
+console.log(document.cookie); // 与当前文档关联的 cookie 信息
+</script>
+```
+
+#### 获取元素
+
+获取元素 是指通过 DOM 提供的方法获取 HTML 元素。
+
+getElementById() 通过元素id获取，如果有多个同名id元素，只会获取第一个
+
+getElementsByTagName() 通过元素名称获取，使用通配符 * 可以获取所有html元素
+
+getElementsByClassName() 通过元素类名获取 (IE8 以下浏览器不支持)
+
+**注意：**
+
+1，getElementById() 方法只能在 document 对象上调用。
+
+2， getElementsByTagName() / getElementsByClassName() 可以在所有 DOM 对象上调用。
+
+3， getElementsByTagName() / getElementsByClassName()
+
+获取到的是一个HTML元素集合（HTMLCollection），是一个类数组对象。需要使用下标访问具体的 DOM 元素，即便是只获取到了一个元素。
+
+**获取 HTML 元素的内容：**
+
+普通元素： innerHTML 属性
+
+表单元素： value 属性
