@@ -111,19 +111,26 @@
 - 数学方法 toFixed() 指定保留的小数位数。
 - 字符串方法（不修改原数组）
 	- length属性
-	- charAt(index) 获取指定位置上的字符
-	- charCodeAt(index)获取指定位置上字符的指定编码
-	- indexOf(str,index) 从左到右查找指定字符第一次出现的位置，没有返回 -1。
-	- lastIndexOf(str,index)从右到左查找指定字符第一次出现的位置，没有返回 -1。
-	- String.fromCartCode(num1,num2....numN)根据字符编码，返回对应的字符。
-	- toUpperCase() 转换为大写
-	- toLowerCase() 转换为小写
-	- concat() 合并字符串
-	- split() 将字符串分隔为数组
+	- 位置获取类
+		- charAt(index) 获取指定位置上的字符
+		- charCodeAt(index)获取指定位置上字符的指定编码
+		- indexOf(str,index) 从左到右查找指定字符第一次出现的位置，没有返回 -1。
+		- lastIndexOf(str,index)从右到左查找指定字符第一次出现的位置，没有返回 -1。
+		- String.fromCartCode(num1,num2....numN)根据字符编码，返回对应的字符。
+	- 范围获取类
+		- slice(start,end)
+		- substring(start,end)
+		- substr(start,length)
+	- 分割，合并和转换类
+		- toUpperCase() 转换为大写
+		- toLowerCase() 转换为小写
+		- concat() 合并字符串
+		- split() 将字符串分隔为数组
 - 正则表达式
-	- 模糊匹配
+	- 正则方法
 		- exec(str) 指定正则匹配的字符串
 		- test(str) 返回布尔值
 	- 精确匹配 不够灵活
+	- 特殊匹配 使用特定字符
 	
 	
