@@ -79,8 +79,13 @@
 	- git commit 之后会进入vim终端编辑器，按a或者i进入编辑模式，按Esc退出编辑模式，再输入`:wq` 英文状态的冒号和wirte,quit的缩写，代表保存并退出，按回车退出vim终端编辑器。
 	- git commit -m "提交说明"  简写方法。如 git commit -m"fix(test): change content"
 - git log 查看日志 唯一ID（哈希值）
-- 
-- 
+- 退会到某个版本 git reset --hard 具体id（哈希值）
+- git checkout 切换分支
+	- git checked
+- git merge 合并分支
+- git tag 创建固定版本
+- git branch 创建分支
+	- git branch -M main 创建一个main分支，并且切换到该分支上。
 
 
 
