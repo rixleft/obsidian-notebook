@@ -81,11 +81,16 @@
 - git log 查看日志 唯一ID（哈希值）
 - 退会到某个版本 git reset --hard 具体id（哈希值）
 - git checkout 切换分支
-	- git checked
+	- git checkout -b main 创建分支并切换到main分支
 - git merge 合并分支
 - git tag 创建固定版本
 - git branch 创建分支
 	- git branch -M main 创建一个main分支，并且切换到该分支上。
+	- git remote -v  
 
+
+
+
+如何参与项目，去他人的github仓库点fork，相当于新建一个分支，点击后就保存在自己的仓库了，点自己仓库的code，复制自己仓库的https链接，在vscode上新建终端，`git clone https地址 .`别忘了英文的句号。这一步是将网盘上自己远程仓库的内容克隆到本地仓库。这个时候再去原项目的仓库得到code里面的https链接地址，用`git remote add upstream https链接`，该命令为添加上游代码库的命令
 
 
