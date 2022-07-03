@@ -423,7 +423,7 @@ console.log(arr);
 </html>
 ```
 
-#### **数组合并为**字符串 （不修改数组）
+#### 数组合并为字符串 （不修改数组）
 
 **join()**
 
@@ -955,7 +955,7 @@ for (var i=0; i<obj2.length; i++) {
 </html>
 ```
 
-## **JSON**
+## JSON
 
 JSON(JavaScript Object Notation, JS 对象表示法)
 
@@ -1120,7 +1120,7 @@ JSON.parse(string) 将一个JSON字符串转换成对象或数组。
 ```
 
 
-## **this** 关键字
+## this 关键字
 
 this 是 JavaScript 中的一个特殊的内置对象。
 
