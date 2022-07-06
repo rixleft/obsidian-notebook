@@ -89,7 +89,7 @@
 	- git remote -v  
 - git fetch upstream 从上游更新代码
 - git merge upstream/main 将远程最新的代码合并到自己的main分支中
-- git push 推送到远程仓库
+- git push 提送到远程
 
 
 
