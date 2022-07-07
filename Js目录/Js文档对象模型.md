@@ -17,6 +17,77 @@ setTimeout(fn,time,arg1,arg2,.....,argN);
 clearTimeout(index);
 index是由 setTimeout() 返回值提供的序号
 
+
+```js
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="icon" href="data:image/ico;base64,=">
+</head>
+<body>
+  
+<script>
+
+// 普通代码JS引擎解析到之后会立即执行
+// console.log(123);
+
+// setTimeout()  设置延迟定时器
+// 第一个参数：  要执行的函数
+// 第二个参数：  延迟的时间   单位为  毫秒    1秒 = 1000毫秒
+// 第三个参数到最后一个参数： 传递给第一个参数指定的函数的实参
+// setTimeout(function() {
+//   // 延迟定时器中的代码，会等待设置的延迟时间到了之后才执行
+//   console.log('abc');
+// }, 1000);
+
+// setTimeout(function() {
+//   console.log('hello');
+//   // 延迟时间最小可以为0，但实际执行时间，会受代码复杂度影响，在不同浏览器中也有所不同
+//   // chrome : 最小值大约是  12 ~ 15 毫秒之间
+//   // firefox : 最小值在 4 ~ 6 毫秒之间
+// }, 0);
+
+// 延迟定时器是异步调用的指定函数，即使上面将延迟时间设置为0，也是后面的代码先执行（因为延迟定时器实际执行时间不是0，至少要等4~10毫秒以上才会调用函数）
+// console.log('这行代码会比上面延迟定时器中的代码先执行');
+
+// setTimeout(function() {
+//   // 查看实参
+//   console.log(arguments);
+
+//   // 从第三个参数开始，后面的所有参数都是传入函数的实参
+//   // IE8以下版本中只支持前两个参数，不支持传递实参。
+// }, 1000, 1, 2, 3, 4)
+
+
+// setTimeout(function() {
+//   console.log('11111');
+//   // 延迟时间的最大值为 2147483647，超过这个值，延迟定时器会立即执行，效果与延迟时间为 0 的效果相同。
+//   // 2147483647 大约等于 24.8 天， 实际工作中不太可能设置这么大
+// }, 2147483648);
+
+// setTimeout() 方法的返回值为一个正整数，表示延迟定时器的编号，每一个定时器的编号都是唯一的 （与循环定时器使用同一套编号，即如果一个延迟定时器的编号为 10，那么就不会有一个同样编号的循环定时器）
+// var timeout = setTimeout(function() {
+//   console.log(222);
+// }, 500);
+
+
+// clearTimeout()   关闭延迟定时器
+// 延迟定时器可以在延迟时间还没结束之前，提前关闭（延迟定时器中指定的函数不会再执行）。
+// var timeout = setTimeout(function() {
+//   console.log(222);
+// }, 500);
+// 关闭定时器，上面定时器中的匿名函数不会被调用，因为定时器被提前关闭了（代码从上到下执行，不需要花500毫秒）
+// clearTimeout(timeout);
+
+</script>
+
+</body>
+</html>
+```
 #### 循环定时器
 setInterval(fn, time, arg1, arg2, …, argN);
 
@@ -35,6 +106,55 @@ setInterval(fn, time, arg1, arg2, …, argN);
 注意： 为避免循环定时器无法停止的BUG，在开启新定时器之前，应先清除旧的定时器。
 
 
+```js
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<link rel="icon" href="data:image/ico;base64,=">
+<body>
+  
+<script>
+
+// setInterval() ： 参数含义与 setTimeout 完全相同，区别只在于延迟定时器只执行一次，循环定时器是重复执行。
+
+var count = 0;
+
+// 每间隔一秒钟，调用一次匿名函数。 只要不关闭定时器，就会一直执行
+// setInterval(function() {
+//   count++;
+//   console.log(count);
+// }, 1000)
+
+// 循环定时器的返回值也是一个全局唯一的编号（不会与延迟定时器产生的编号重复） 
+// var interval = setInterval(function() {
+//   count++;
+//   console.log(count);
+//   if (count === 10) {
+//     // 在循环定时器内部，可以通过判断来控制循环执行的次数
+//     clearInterval(interval);
+//   }
+// }, 1000)
+// 在循环定时器外面关闭定时器，将一次都不执行
+// clearInterval(interval);
+
+// var interval = setInterval(function() {
+//   count++;
+//   // 查看传入函数中的参数
+//   console.log(count, arguments);
+//   if (count === 10) {
+//     clearInterval(interval);
+//   }
+// }, 1000, 10, 20, 30);
+
+</script>
+</body>
+</html>
+```
 ## DOM
 #### document对象
 
