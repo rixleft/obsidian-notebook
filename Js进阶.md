@@ -58,78 +58,20 @@ DOM对象是根据 HTML 或 XML 文档结构生成的 JavaScript 对象。
 
 ### 节点类型
 
-节点类型常量|节点类型值|描述
-ELEMENT_NODE
-
-1
-
-HTML 或 XML 标签，例如 <div> 和 <img> 。
-
-ATTRIBUTE_NODE
-
-2
-
-标签上的属性 （ DOM4 移除）
-
-TEXT_NODE
-
-3
-
-标签中实际的文字（包括回车，换行等空白字符）
-
-CDATA_SECTION_NODE
-
-4
-
-元数据字符串，例如 <!CDATA[[ … ]]>。
-
-ENTITY_REFERENCE_NODE
-
-5
-
-XML 实体引用节点。 （ DOM4 移除）
-
-ENTITY_NODE
-
-6
-
-XML <!ENTITY ...> 节点。 （DOM4 移除）
-
-PROCESSING_INSTRUCTION_NODE
-
-7
-
-处理指令，例如 <?xml-stylesheet ... ?> 声明。
-
-COMMENT_NODE
-
-8
-
-HTML 或 XML 文档中的注释。
-
-DOCUMENT_NODE
-
-9
-
-特指 document 对象
-
-DOCUMENT_TYPE_NODE
-
-10
-
-文档声明，例如 <!DOCTYPE html>
-
-DOCUMENT_FRAGMENT_NODE
-
-11
-
-DocumentFragment 节点 （通过 JS 创建）
-
-NOTATION_NODE
-
-12
-
-XML <!NOTATION ...> 节点。 （DOM4 移除）
+| 节点类型常量                | 节点类型值 | 描述                                          |
+| --------------------------- | ---------- | --------------------------------------------- |
+| ELEMENT_NODE                | 1          | HTML 或 XML 标签，例如 `<div>` 和`<img>` 。      |
+| ATTRIBUTE_NODE              | 2          | 标签上的属性 （ DOM4 移除）|  
+| TEXT_NODE                   | 3          | 标签中实际的文字（包括回车，换行等空白字符）  |
+| CDATA_SECTION_NODE          | 4          | 元数据字符串，例如 `<!CDATA[[ … ]]>`。          |
+| ENTITY_REFERENCE_NODE       | 5          | XML 实体引用节点。 （ DOM4 移除）             |
+| ENTITY_NODE                 | 6          | XML `<!ENTITY ...>` 节点。 （DOM4 移除）        |
+| PROCESSING_INSTRUCTION_NODE | 7          | 处理指令，例如 `<?xml-stylesheet ... ?>` 声明。 |
+| COMMENT_NODE                | 8          | HTML 或 XML 文档中的注释。                    |
+| DOCUMENT_NODE               | 9          | 特指 document 对象                            |
+| DOCUMENT_TYPE_NODE          | 10         | 文档声明，例如 `<!DOCTYPE html>`                |
+| DOCUMENT_FRAGMENT_NODE      | 11         | DocumentFragment 节点 （通过 JS 创建）        |
+| NOTATION_NODE               | 12         | XML `<!NOTATION ...>` 节点。 （DOM4 移除）      |
 
 
 ### HTML 文档中的节点类型
@@ -160,53 +102,13 @@ HTML 中常用的节点类型包括：
 
 **nodeValue:** 节点名称（nodeName）对应的值
 
-节点类型
-
-nodeType
-
-nodeName
-
-nodeValue
-
-元素节点
-
-1
-
-大写的标签名
-
-null
-
-属性节点
-
-2
-
-属性的名称
-
-属性的值
-
-文本节点
-
-3
-
-#text
-
-文本内容
-
-注释节点
-
-8
-
-#comment
-
-注释内容
-
-文档节点
-
-9
-
-#document
-
-null
+| 节点类型 | nodeType | nodeName     | nodeValue |
+| -------- | -------- | ------------ | --------- |
+| 元素节点 | 1        | 大写的标签名 | null      |
+| 属性节点 | 2        | 属性的名称   | 属性的值  |
+| 文本节点 | 3        | `#text`        | 文本内容  |
+| 注释节点 | 8        | `#comment`     | 注释内容  |
+| 文档节点 | 9        | `#document`    | null      |
 
 ### 以节点的方式获取元素
 
@@ -223,7 +125,7 @@ childNodes 包含所有html中存在的节点类型
 **nextSibling** 获取指定元素的下一个兄弟节点 （包括文本节点和注释节点）
 
 **previousSibling** 获取指定元素的上一个兄弟节点 （包括文本节点和注释节点）
-
+```js
 <!DOCTYPE html>  
 <html lang="zh-CN">  
 <head>  
@@ -325,6 +227,8 @@ childNodes 包含所有html中存在的节点类型
 ​  
 </body>  
 </html>
+```
+
 
 ### 创建新的节点
 
@@ -342,6 +246,7 @@ childNodes 包含所有html中存在的节点类型
 
 **说明：** 所有方法都只能通过 document 对象调用
 
+```js
 <!DOCTYPE html>  
 <html lang="zh-CN">  
 <head>  
@@ -383,6 +288,7 @@ childNodes 包含所有html中存在的节点类型
   </script>  
 </body>  
 </html>
+```
 
 ### 节点的添加和删除
 
@@ -408,6 +314,7 @@ childNodes 包含所有html中存在的节点类型
 
 **说明：** 所有方法都是通过父级节点调用
 
+```js
 <!DOCTYPE html>  
 <html lang="zh-CN">  
 <head>  
@@ -473,6 +380,7 @@ childNodes 包含所有html中存在的节点类型
   </script>  
 </body>  
 </html>
+```
 
 ### 节点的替换和克隆
 
@@ -492,6 +400,7 @@ childNodes 包含所有html中存在的节点类型
 
 在被克隆的节点上调用
 
+```js
 <!DOCTYPE html>  
 <html lang="zh-CN">  
 <head>  
@@ -571,10 +480,12 @@ childNodes 包含所有html中存在的节点类型
   </script>  
 </body>  
 </html>
+```
+
 
 ### jQuery中的节点操作
 
-**$(元素字符串)** 创建元素： 如 $('<div>')
+**$(元素字符串)** 创建元素： 如 \$('\<div>\')
 
 **ele1.append(ele2)** 将ele2添加到ele1的子节点的最后面，相当于原生的 appendChild() 方法
 
@@ -592,6 +503,9 @@ childNodes 包含所有html中存在的节点类型
 
 **insertAfter()** 与 after 方法相同，只是将书写顺序颠倒过来
 
+
+
+```js
 <!DOCTYPE html>  
 <html lang="zh-CN">  
 <head>  
@@ -694,6 +608,7 @@ childNodes 包含所有html中存在的节点类型
   </script>  
 </body>  
 </html>
+```
 
 **wrap()** 将所有匹配的节点每个单独用指定的元素节点包裹起来
 
@@ -714,7 +629,3 @@ childNodes 包含所有html中存在的节点类型
 **detach()** 删除元素，删除的元素可以再次添加回来，并且事件还在
 
 **clone()** 克隆指定节点，参数是布尔值，表示是否克隆事件。
-
-## 本节练习
-
-![上移下移](file://D:/%E8%AF%BE%E7%A8%8B%E6%96%87%E4%BB%B6/js14/images/exam.png?lastModify=1657172450)
