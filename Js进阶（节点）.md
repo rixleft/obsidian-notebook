@@ -489,9 +489,9 @@ childNodes 包含所有html中存在的节点类型
 
 **ele1.append(ele2)** 将ele2添加到ele1的子节点的最后面，相当于原生的 appendChild() 方法
 
-**ele1.prepend(ele2)** 将ele2添加到ele1子节点的最前面，原生没有类似方法
-
 **appendTo()** 与 append 方法相同，只是将书写顺序颠倒过来
+
+**ele1.prepend(ele2)** 将ele2添加到ele1子节点的最前面，原生没有类似方法
 
 **prependTo()** 与 prepend 方法相同，只是将书写顺序颠倒过来
 
