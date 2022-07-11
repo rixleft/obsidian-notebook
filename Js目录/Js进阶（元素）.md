@@ -215,13 +215,13 @@
 
 标准和ie9以上浏览器 window.pageXoffset / window.pageYoffset
 
-IE7、8 ： document.documentElement 的 offsetLeft / offsetTop
+IE7、8 ： document.documentElement 的 scrollLeft / scrollTop
 
-IE 6 : document.body 的 offsetLeft / offsetTop
+IE 6 : document.body 的 scrollLeft / scrollTop
 
 **元素滚动条：**
 
-元素.offsetLeft / 元素.offsetTop
+元素.scrollLeft / 元素.scrollTop
 ```js
 <!DOCTYPE html>  
 <html lang="en">  
