@@ -18,7 +18,7 @@
 元素的左边和上边边框宽度
 
 **注意：** 只有支持宽高设置的元素，以上属性的取值才会准确。
-
+```js
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
@@ -103,6 +103,8 @@
   </script>  
 </body>  
 </html>
+```
+
 
 ## 获取元素位置
 
@@ -119,7 +121,7 @@
 **offsetTop:** 元素的上外边框到定位父级的上内边框之间的距离
 
 **注意：** ie6/7下 margin-top 与 padding-top 会重叠。
-
+```js
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
@@ -200,6 +202,8 @@
   </script>  
 </body>  
 </html>
+```
+
 
 ## 页面与元素的滚动尺寸
 
@@ -218,7 +222,7 @@ IE 6 : document.body 的 offsetLeft / offsetTop
 **元素滚动条：**
 
 元素.offsetLeft / 元素.offsetTop
-
+```js
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
@@ -287,6 +291,8 @@ IE 6 : document.body 的 offsetLeft / offsetTop
   </script>  
 </body>  
 </html>
+```
+
 
 ## 页面滚动与缩放事件
 
@@ -299,7 +305,7 @@ window.onscroll
 window.onresize
 
 scroll 和 resize 都是高频触发事件。
-
+```js
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
@@ -345,6 +351,8 @@ scroll 和 resize 都是高频触发事件。
 </script>  
 </body>  
 </html>
+```
+
 
 ## jQuery 的尺寸与位置方法
 
@@ -371,7 +379,7 @@ outerHeight(true) 传递参数 true , 会额外加上margin的值
 **offset() :** 元素到整个文档的左边或顶边之间的距离 （{left: 0, top: 0}）
 
 该方法对设置了 display: none; 的元素无效。
-
+```js
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
@@ -459,9 +467,10 @@ outerHeight(true) 传递参数 true , 会额外加上margin的值
   </script>  
 </body>  
 </html>
+```
 
 ## 封装 offset() 函数
-
+```js
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
@@ -551,6 +560,7 @@ outerHeight(true) 传递参数 true , 会额外加上margin的值
   </script>  
 </body>  
 </html>
+```
 
 ## 实例效果： 拖拽
 
@@ -571,7 +581,7 @@ clientX / clientY
 计算鼠标点击位置与元素边框之间的距离：
 
 ev.offsetX / ev.offsetY
-
+```js
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
@@ -635,6 +645,7 @@ ev.offsetX / ev.offsetY
   </script>  
 </body>  
 </html>
+```
 
 ## 限制范围的拖拽
 
@@ -649,7 +660,7 @@ ev.offsetX / ev.offsetY
 2，获取限制父级的尺寸
 
 3，获取滚动尺寸
-
+```js
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
@@ -761,9 +772,10 @@ ev.offsetX / ev.offsetY
   </script>  
 </body>  
 </html>
+```
 
 ## 放大镜效果
-
+```js
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -899,6 +911,7 @@ ev.offsetX / ev.offsetY
 
 </body>
 </html>
+```
 
 ## 返回顶部
 
@@ -915,7 +928,7 @@ ev.offsetX / ev.offsetY
 防抖：
 
 使用延迟定时器解决防抖问题
-
+```js
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -994,3 +1007,4 @@ console.log( $(window).scrollTop() )
   </script>
 </body>
 </html>
+```
