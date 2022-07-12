@@ -372,11 +372,11 @@ outerWidth(true) 传递参数 true , 会额外加上margin的值
 
 outerHeight(true) 传递参数 true , 会额外加上margin的值
 
-**position() :** 元素到 offsetParent 之间的距离 （{left: 0, top: 0}）
+**position() :** 元素的外边距到 offsetParent的内边距之间的距离 （{left: 0, top: 0}）
 
 该方法对于 display: none; 和 position: fixed; 的元素计算不准确
 
-**offset() :** 元素到整个文档的左边或顶边之间的距离 （{left: 0, top: 0}）
+**offset() :** 元素的外边距到整个文档的左边或顶边之间的距离 （{left: 0, top: 0}）
 
 该方法对设置了 display: none; 的元素无效。
 ```js
