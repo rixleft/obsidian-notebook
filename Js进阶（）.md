@@ -280,7 +280,7 @@ mousewheel
 **新增标准属性：**
 
 wheel IE9 以上浏览器才支持，并且在IE中只能使用 addEventListener() 方法绑定
-
+```js
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
@@ -343,6 +343,7 @@ wheel IE9 以上浏览器才支持，并且在IE中只能使用 addEventListener
   </script>  
 </body>  
 </html>
+```
 
 ## 键盘事件
 
@@ -362,6 +363,7 @@ wheel IE9 以上浏览器才支持，并且在IE中只能使用 addEventListener
 
 **常用功能键：** ctrlKey , shiftKey , altKey 还有对应的布尔值，按下为true, 抬起为false
 
+```js
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
@@ -402,6 +404,7 @@ wheel IE9 以上浏览器才支持，并且在IE中只能使用 addEventListener
 ​  
 </body>  
 </html>
+```
 
 ## tabindex 属性
 
@@ -414,7 +417,7 @@ tabindex 的值没有具体的初始值要求，也不需要一定是连续数�
 在 HTML 4.01 版本中，只有表单元素支持设置 tabindex 属性
 
 在 HTML5 版本中，所有标签元素都可以设置 tabindex 属性。
-
+```js
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
@@ -444,6 +447,7 @@ tabindex 的值没有具体的初始值要求，也不需要一定是连续数�
 ​  
 </body>  
 </html>
+```
 
 ## 实例： 钢琴效果
 
@@ -452,7 +456,7 @@ tabindex 的值没有具体的初始值要求，也不需要一定是连续数�
 利用事件对象中， 数字的 key 值为字符串类型的 数字本身，将数字 key 值作为按键标签的下标 和 音频文件的 文件名。
 
 按下数字 1 ~ 7 时，找到对应的 标签 添加状态，并播放对应的钢琴音频。
-
+```js
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
@@ -525,3 +529,4 @@ tabindex 的值没有具体的初始值要求，也不需要一定是连续数�
 ​  
 </body>  
 </html>
+```
