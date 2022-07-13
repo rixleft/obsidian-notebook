@@ -174,3 +174,5 @@ JavaScript会将所有的变量的声明提到所有代码的前边，变量提�
     </script>
 ```
 
+document.body  获取body元素
+document.documentElement 获取html元素
