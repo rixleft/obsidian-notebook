@@ -11,8 +11,7 @@
 同一个构造函数创建的所有实例，即使它们的实例方法功能完全相同，但每个实例方法都是一个单独的函数。
 
 多个功能相同的实例方法会造成不必要的内存空间浪费，实例越多，浪费的空间越多。
-```
-```
+```js
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
@@ -87,6 +86,8 @@
 </script>  
 </body>  
 </html>
+```
+
 
 ## 构造函数原型
 
@@ -99,7 +100,7 @@ prototype 默认自带一个属性 constructor，该属性的值为构造函数�
 constructor 属性用来指示创建实例对象的构造函数。
 
 可以将功能相同的实例方法添加在构造函数的原型对象 prototype 中，实现内存占用的优化。
-
+```js
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
@@ -155,9 +156,11 @@ constructor 属性用来指示创建实例对象的构造函数。
 ​  
 </body>  
 </html>
+```
+
 
 在原型对象上添加属性和方法来优化内存占用
-
+```js
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
@@ -217,6 +220,7 @@ constructor 属性用来指示创建实例对象的构造函数。
 </script>  
 </body>  
 </html>
+```
 
 ## 原型链
 
@@ -227,7 +231,7 @@ constructor 属性用来指示创建实例对象的构造函数。
 当访问一个对象的属性或方法时，会优先在这个对象自身查找有没有这个属性或方法，如果有，则采用自身的属性或方法；如果没有，则通过原型链在创建这个对象的构造函数的原型对象中查找，如果还没有查找到，则继续在创建原型对象的构造函数的原型对象中查找，一直查找到顶层对象 Object 的原型对象 prototype 中，如果还找不到，则返回 undefined。
 
 对象通过特殊属性 `__proto__` 来关联创建自身的构造函数的原型对象 prototype
-
+```js
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
@@ -308,6 +312,7 @@ constructor 属性用来指示创建实例对象的构造函数。
   </script>  
 </body>  
 </html>
+```
 
 **instanceof**
 
@@ -324,7 +329,7 @@ constructor 属性用来指示创建实例对象的构造函数。
 **hasOwnProperty()**
 
 对象方法， 检测一个属性或方法是不是对象自身的， 是返回 true ， 不是 返回 false .
-
+```js
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
@@ -391,6 +396,7 @@ for(var i in obj) {
 </script>  
 </body>  
 </html>
+```
 
 ## 原型链关系
 
@@ -403,7 +409,7 @@ for(var i in obj) {
 Function 构造函数由JS引擎生成，它的 constructor 属性指向自身，它的 **proto** 指向 Object.prototype 对象；
 
 原型链的最顶层为 Object.prototype 对象，Object.prototype 由JS引擎生成，Object.prototype 的 **proto** 为 null；
-
+```js
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
@@ -470,11 +476,13 @@ bb.ff = function() {};
 </script>  
 </body>  
 </html>
+```
+
 
 ## 安全类
 
 安全类是指在自定义构造函数时，为防止用户漏写 new 关键字导致构造函数调用出错的写法
-
+```js
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
@@ -524,6 +532,8 @@ bb.ff = function() {};
 </script>  
 </body>  
 </html>
+```
+
 
 ## 内置构造函数
 
@@ -542,7 +552,7 @@ Boolean() RegExp() Error() Date()
 **Number :** 使用 new 创建数字对象 / 不使用new 其它类型转数字
 
 **Boolean :** 使用 new 创建布尔对象 / 不使用new 其它类型转布尔
-
+```js
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
@@ -635,6 +645,8 @@ var d = '120px';
 </script>  
 </body>  
 </html>
+```
+
 
 ## 正则 与 错误提示 构造函数
 
@@ -647,7 +659,7 @@ var d = '120px';
 第二个参数是字符串格式的修饰符，i、g、m
 
 **说明：** 构造函数方式创建正则，支持使用变量表示正则规则。
-
+```js
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -687,13 +699,15 @@ var d = '120px';
 </script>
 </body>
 </html>
+```
+
 
 **new Error()** 自定义错误信息
 
 throw new Error('这是一条错误信息')；
 
 **说明：** Error() 会中断代码执行，可以使用 try{} catch() {} 代替，优化体验。
-
+```js
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -743,6 +757,8 @@ throw new Error('这是一条错误信息')；
 
 </body>
 </html>
+```
+
 
 ## 日期构造函数
 
@@ -767,7 +783,7 @@ throw new Error('这是一条错误信息')；
 4，单一参数： new Date(2022, 6, 14, 10, 21, 32);
 
 按 年 月 日 时 分 秒 毫秒 的顺序设置指定时间
-
+```js
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -817,3 +833,4 @@ throw new Error('这是一条错误信息')；
 </script>
 </body>
 </html>
+```
