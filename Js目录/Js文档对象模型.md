@@ -1,4 +1,4 @@
-tt### 定时器
+### 定时器
 #### 延迟定时器 
 setTimeout(fn,time,arg1,arg2,.....,argN);
 
