@@ -92,6 +92,7 @@
 - git push 提送到远程
 - git cherry-pick  哈希值1，哈希值2.....，可以将其他分支上的内容复制到主分支上。
 - git rebase -i HEAD~number，number是自己输入的数字，代表向上复制了几步，并且会弹出VIM,可以自己设置复制后的顺序，和git cherry-pick 哈希值1,哈希值2 类似。也可以写在自己上面分支的具体名称。例如 git rebase -i main。
+- git rebase main master      main 为主分支时，该命令可以将master分支合并到main分支上，同指向一个哈希值。
 
 
 
