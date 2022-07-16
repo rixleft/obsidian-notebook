@@ -90,7 +90,7 @@
 - git fetch upstream 从上游更新代码
 - git merge upstream/main 将远程最新的代码合并到自己的main分支中
 - git push 提送到远程
-
+- git cherry-pick  哈希值1，哈希值2.....，可以将其他分支上的内容复制到主分支上。
 
 
 
