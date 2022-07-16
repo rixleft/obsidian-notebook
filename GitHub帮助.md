@@ -78,12 +78,16 @@
 - git commit：提交
 	- git commit 之后会进入vim终端编辑器，按a或者i进入编辑模式，按Esc退出编辑模式，再输入`:wq` 英文状态的冒号和wirte,quit的缩写，代表保存并退出，按回车退出vim终端编辑器。
 	- git commit -m "提交说明"  简写方法。如 git commit -m"fix(test): change content"
-	- git commit --amend 如果当前是主分支，会再父节点出新建一个分支，并切换到该分支上
+	- git commit --amend 如果当前是主分支，会再父提交记录上出新建一个分支，并切换到该分支上
 - git log 查看日志 唯一ID（哈希值）
 - 退会到某个版本 git reset --hard 具体id（哈希值）
 - git checkout 切换分支
 	- git checkout -b main 创建分支并切换到main分支
-- git merge 合并分支
+	- git checkout HEAD~1 将HEAD回退到前一个提交记录上
+	- git checkout HEAD^ 将HEAD回到第一个父提交记录上
+	- git checkout HEAD^2 将HEAD回到第二个父提交记录上
+	- git checkout HEAD~\^2~2 将HEAD回退一个提交记录，再回到第二个父提交记录上，再回退两个提交记录。
+- git merge  合并分支（一个参数）
 - git tag 创建固定版本
 - git branch 创建分支
 	- git branch -M main 创建一个main分支，并且切换到该分支上。
