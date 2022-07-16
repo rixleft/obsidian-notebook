@@ -78,6 +78,7 @@
 - git commit：提交
 	- git commit 之后会进入vim终端编辑器，按a或者i进入编辑模式，按Esc退出编辑模式，再输入`:wq` 英文状态的冒号和wirte,quit的缩写，代表保存并退出，按回车退出vim终端编辑器。
 	- git commit -m "提交说明"  简写方法。如 git commit -m"fix(test): change content"
+	- git commit --amend 如果当前是主分支，会再父节点出新建一个分支，并切换到该分支上
 - git log 查看日志 唯一ID（哈希值）
 - 退会到某个版本 git reset --hard 具体id（哈希值）
 - git checkout 切换分支
@@ -93,6 +94,8 @@
 - git cherry-pick  哈希值1，哈希值2.....，可以将其他分支上的内容复制到主分支上。
 - git rebase -i HEAD~number，number是自己输入的数字，代表向上复制了几步，并且会弹出VIM,可以自己设置复制后的顺序，和git cherry-pick 哈希值1,哈希值2 类似。也可以写在自己上面分支的具体名称。例如 git rebase -i main。
 - git rebase main master      main 为主分支时，该命令可以将master分支合并到main分支上，同指向一个哈希值。
+- git tag 给某个哈希值打上标签，可以用标签标记，如git tag v0 c1,
+- 
 
 
 
