@@ -179,7 +179,15 @@
 			- (?<=y)x 向后肯定断言，x前面必须有y（y不会作为匹配结果返回）
 			- (?<!y)x 向后否定断言，x前面不能有y
 	- 或操作符 `|`
-- 
+- 定时器
+	- 延迟定时器 
+		- setTimeout(fn(),time,arg1,arg2...)  返回值为编号index
+		- clearTimeout(index)
+	- 循环定时器 
+		- setInterval(fn(),time,arg1,arg2...) 返回值为编号index
+		- clearInterval(index)
+- 获取元素
+	- getElementById() 
 
 	
 	
