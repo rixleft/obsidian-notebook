@@ -353,7 +353,7 @@ wheel IE9 以上浏览器才支持，并且在IE中只能使用 addEventListener
 
 **onkeyup** 键盘按键释放后触发
 
-触发顺序 ： keydown à keypress à keyup
+触发顺序 ： keydown>keypress >keyup
 
 **onkeypress** 只能被输入型按键触发，比如 数字键，字母键；无法被功能型按钮触发，比如 ctrl , shift , alt 等。
 
