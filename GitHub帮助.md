@@ -83,6 +83,7 @@
 - 退会到某个版本 git reset --hard 具体id（哈希值）
 - git checkout 切换分支
 	- git checkout -b main 创建main分支并切换到该分支
+	- git checkout -b main c2 原本是c1，这样可以创建main分支，并且切换到该分支上，且提交一次。
 	- git checkout HEAD~1 将HEAD回退到前一个提交记录上
 	- git checkout HEAD^ 将HEAD回到第一个父提交记录上
 	- git checkout HEAD^2 将HEAD回到第二个父提交记录上
