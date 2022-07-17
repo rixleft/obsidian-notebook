@@ -82,7 +82,7 @@
 - git log 查看日志 唯一ID（哈希值）
 - 退会到某个版本 git reset --hard 具体id（哈希值）
 - git checkout 切换分支
-	- git checkout -b main 创建分支并切换到main分支
+	- git checkout -b main 创建main分支并切换到该分支
 	- git checkout HEAD~1 将HEAD回退到前一个提交记录上
 	- git checkout HEAD^ 将HEAD回到第一个父提交记录上
 	- git checkout HEAD^2 将HEAD回到第二个父提交记录上
@@ -101,6 +101,7 @@
 - git tag 给某个哈希值打上标签（锚点），可以用标签标记，如git tag v0 c1,
 - git describe 分支名 表示描述该分支所处位置，返回值为离最近的锚点的距离，如 v2_1_gC4，表示C4距离最近的锚点v2的距离为一次提交的距离。
 - git pull --rebase 是git fetch 和git rebase的简写
+- git reset --hard o/main 硬重置
 
 
 
