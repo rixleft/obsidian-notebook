@@ -100,7 +100,7 @@
 - git rebase main master      main 为主分支时，该命令可以将master分支合并到main分支上，同指向一个哈希值。
 - git tag 给某个哈希值打上标签（锚点），可以用标签标记，如git tag v0 c1,
 - git describe 分支名 表示描述该分支所处位置，返回值为离最近的锚点的距离，如 v2_1_gC4，表示C4距离最近的锚点v2的距离为一次提交的距离。
-- git pull 
+- git pull --rebase 是git fetch 和git rebase的简写
 
 
 
