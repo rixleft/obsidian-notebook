@@ -187,7 +187,19 @@
 		- setInterval(fn(),time,arg1,arg2...) 返回值为编号index
 		- clearInterval(index)
 - 获取元素
-	- getElementById() 
+	- getElementById()  得到的是一个对象，只能在 document 对象上调用。
+	- getElementsByTagName() 得到的是一个类数组，可以在所有 DOM 对象上调用。
+	- getElementsByClassName() 得到的是一个类数组，可以在所有 DOM 对象上调用。
+	- querySelector()
+	- querySelectorAll()
+- 获取元素的值
+	- 普通元素： innerHTML 属性
+	- 表单元素： value 属性
+- 对元素属性的操作方法
+	- 点语法 
+	- `[]`语法
+	- getAttribute() / setAttribute() 获取和修改行间样式，包括自定义属性
+
 
 	
 	
