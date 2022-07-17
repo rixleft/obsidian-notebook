@@ -245,7 +245,9 @@
 	- insertBefore(node1,node2) 将一个元素插入到另一个元素的前面
 	- removeChild(node)  从指定元素中移除子元素节点
 - 节点的替换和克隆
-	- replaceChild()
-
-	
+	- replaceChild(newChild, oldChild)
+	- cloneNode(ture/false) true代表克隆所有的后代节点，false代表克隆当前节点。
+- 更改this指向
+	- call(thisObj, arg1, arg2, arg3, …, argN),将函数中的 this 指向 thisObj
+	- apply(thisObj, arr) 将函数中的 this 指向 thisObj
 	
