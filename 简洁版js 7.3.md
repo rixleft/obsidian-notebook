@@ -196,9 +196,16 @@
 	- 普通元素： innerHTML 属性
 	- 表单元素： value 属性
 - 对元素属性的操作方法
-	- 点语法 
-	- `[]`语法
-	- getAttribute() / setAttribute() 获取和修改行间样式，包括自定义属性
+	- 点语法  不允许属性为变量
+	- `[]`语法 允许属性为变量
+	- getAttribute() / setAttribute() 获取和修改行间样式，包括自定义属性，设置时会覆盖原本的属性。
+- 获取元素样式
+	- IE  
+		- getComputedStyle(obj) 方法
+		- getPropertyValue() 方法
+		- currentStyle 属性
+	- 其他
+		- getAttribute(‘style’,'属性：')
 
 
 	
