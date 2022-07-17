@@ -276,4 +276,7 @@
 	- clientWidth/clientHeight:
 	- offsetWidth/offsetHeight:
 	- cilentLeft/clientTop:
-- 
+- 获取元素位置
+	- offsetParent 
+	- offsetLeft
+	- offsetTop
