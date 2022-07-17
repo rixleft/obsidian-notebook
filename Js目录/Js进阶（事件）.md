@@ -207,6 +207,14 @@ DOM 2 级事件中，新增了 addEventListener() 和 removeEventListener() 方�
 
 DOM 2级 可以分别在捕获和冒泡阶段绑定事件处理函数，IE6~8 和 DOM 0级 只能在冒泡阶段绑定事件处理函数。
 
+onclick 和attachEvent 只能得到冒泡阶段。
+
+addEventListener(type,function(),useCapture)，第三个参数如果是true，表示在事件捕获阶段调用事件处理程序，如果是false（不写默认是false），表示在事件冒泡阶段调用事件处理程序。
+
+实际开发中我们很少使用事件捕获，我们更关注事件冒泡。
+
+有些事件是没有冒泡的，比如onbur,onfocus,onmouseenter,onmouseleave。
+
 ## 绑定事件处理函数
 
 **DOM 0级 方式绑定：**
