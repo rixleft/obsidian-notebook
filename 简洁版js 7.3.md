@@ -278,5 +278,9 @@
 	- cilentLeft/clientTop:
 - 获取元素位置
 	- offsetParent 
-	- offsetLeft
+	- offsetLeft 
 	- offsetTop
+- 页面与元素的滚动尺寸
+	- 标准浏览器 window.scrollX /window.scrollY
+	- 标准和ie9以上 window.pageXoffset/window.pageYoffset
+	- document.documentElement的scrollLeft/scrollTop
