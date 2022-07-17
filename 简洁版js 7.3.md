@@ -253,4 +253,25 @@
 - 绑定事件
 	- DOM 0级 element.on+事件名称=事件处理函数
 	- DOM 2级 element.addEventListener(事件名称，事件处理函数，事件阶段)
--
+- 注销事件
+	- DOM 0级 element.on+事件名称=null
+	- DOM 2级 element.removeEventListener(事件名称，事件处理函数，事件阶段)
+	- IE6~8 element.detachEvent(事件名称，事件处理函数)
+- 事件对象常用属性
+	- offsetX,offsetY,
+	- clientX,clientY,
+	- pageX,pageY,
+	- screenX,screenY,
+	- type,
+	- target
+	- currentTarget
+	- timestamp
+- 取消事件冒泡
+	- 事件对象.stopPropagation(); 高版本
+	- 事件对象.cancelBubble=true; 低版本
+- 阻止事件默认行为
+	- 事件对象.preventDefault();高版本
+	- 事件对象.returnValue=false;低版本
+- 获取元素尺寸
+	- clientWidth/clientHeight:
+	- offsetWidth/offsetHeight:
