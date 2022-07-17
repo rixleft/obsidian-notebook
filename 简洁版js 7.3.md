@@ -250,4 +250,7 @@
 - 更改this指向
 	- call(thisObj, arg1, arg2, arg3, …, argN),将函数中的 this 指向 thisObj
 	- apply(thisObj, arr) 将函数中的 this 指向 thisObj
-	
+- 绑定事件
+	- DOM 0级 element.on+事件名称=事件处理函数
+	- DOM 2级 element.addEventListener(事件名称，事件处理函数，事件阶段)
+-
