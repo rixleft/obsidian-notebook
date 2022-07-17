@@ -275,3 +275,5 @@
 - 获取元素尺寸
 	- clientWidth/clientHeight:
 	- offsetWidth/offsetHeight:
+	- cilentLeft/clientTop:
+- 
