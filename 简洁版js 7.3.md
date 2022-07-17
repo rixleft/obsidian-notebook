@@ -223,11 +223,29 @@
 - 节点
 	- **nodeType :** 表示节点类型的数字值
 		- 元素节点 1
-		- 属性节点 2
-		- 
+		- 属性节点 2 （DOM4移除）
+		- 文本节点 3
+		- 注释节点 8
+		- 文档节点 9
 	- **nodeName:** 表示节点名称的字符串
 	- **nodeValue:** 节点名称（nodeName）对应的值
-
+- 节点方式获取元素
+	- childNodes 获取指定元素的所有子节点
+	- parentNode 获取指定元素的直接父级元素标签
+	- firstChild 获取指定元素的第一个子节点
+	- lastChild 获取指定元素的最后一个子节点
+	- nextSibling 获取指定元素的下一个兄弟节点
+	- previousSibling 获取指定元素的上一个兄弟节点
+- 创建新的节点 只能通过document对象调用
+	- createElement() 创建元素节点
+	- createTextNode() 创建文本节点
+	- createComment() 创建注释节点
+- 节点的添加和删除
+	- appendChild(node) 将元素添加到指定元素的最后 （追加子节点）
+	- insertBefore(node1,node2) 将一个元素插入到另一个元素的前面
+	- removeChild(node)  从指定元素中移除子元素节点
+- 节点的替换和克隆
+	- replaceChild()
 
 	
 	
