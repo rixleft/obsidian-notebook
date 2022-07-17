@@ -205,7 +205,28 @@
 		- getPropertyValue() 方法
 		- currentStyle 属性
 	- 其他
-		- getAttribute(‘style’,'属性：')
+		- getAttribute(‘style’,'属性:属性值;属性:属性值')
+- 键盘事件
+	- onfocus 获取焦点
+	- onblur 失去焦点
+	- onkeydown 键盘按下
+	- onkeyup 键盘释放
+- 鼠标事件
+	- onclick 单击
+	- ondblclick 双击
+	- onmouseenter 鼠标进入
+	- onmouseleave 鼠标离开
+	- onmousedown 鼠标按下
+	- onmouseup 鼠标释放
+- onload事件
+	- onload 事件是 BOM 事件，当页面中的所有资料都加载完成之后，通过 window 对象自动触发。
+- 节点
+	- **nodeType :** 表示节点类型的数字值
+		- 元素节点 1
+		- 属性节点 2
+		- 
+	- **nodeName:** 表示节点名称的字符串
+	- **nodeValue:** 节点名称（nodeName）对应的值
 
 
 	
