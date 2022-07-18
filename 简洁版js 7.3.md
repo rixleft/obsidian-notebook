@@ -284,3 +284,7 @@
 	- 标准浏览器 window.scrollX /window.scrollY
 	- 标准和ie9以上 window.pageXoffset/window.pageYoffset
 	- document.documentElement的scrollLeft/scrollTop
+- 页面滚动与缩放事件
+	- window.onscroll 滚动事件
+	- window.onresize 缩放事件
+	- 
