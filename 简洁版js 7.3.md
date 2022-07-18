@@ -218,6 +218,7 @@
 	- onmouseleave 鼠标离开
 	- onmousedown 鼠标按下
 	- onmouseup 鼠标释放
+	- onmousemove 鼠标移动
 - onload事件
 	- onload 事件是 BOM 事件，当页面中的所有资料都加载完成之后，通过 window 对象自动触发。
 - 节点
@@ -287,4 +288,5 @@
 - 页面滚动与缩放事件
 	- window.onscroll 滚动事件
 	- window.onresize 缩放事件
+- 构造函数 Function() 
 	- 
