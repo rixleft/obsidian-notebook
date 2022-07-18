@@ -289,4 +289,5 @@
 	- window.onscroll 滚动事件
 	- window.onresize 缩放事件
 - 构造函数 Function() 
+	- prototype属性 属性值为一个对象 称为原型对象
 	- 
