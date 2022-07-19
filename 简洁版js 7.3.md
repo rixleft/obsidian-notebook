@@ -306,4 +306,7 @@
 	- RegExp()
 	- Error()
 	- Date()
-	- new RegExp(regStr,letter)
+- new RegExp(regStr,letter)
+- new Error()
+- new Date()
+ 
