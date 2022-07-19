@@ -78,7 +78,7 @@
 - git commit：提交
 	- git commit 之后会进入vim终端编辑器，按a或者i进入编辑模式，按Esc退出编辑模式，再输入`:wq` 英文状态的冒号和wirte,quit的缩写，代表保存并退出，按回车退出vim终端编辑器。
 	- git commit -m "提交说明"  简写方法。如 git commit -m"fix(test): change content"
-	- git commit --amend 如果当前是主分支，会再父提交记录上出新建一个分支，并切换到该分支上
+	- git commit --amend 如果当前是主分支，会在父提交记录上出新建一个分支，并切换到该分支上
 - git log 查看日志 唯一ID（哈希值）
 - 退会到某个版本 git reset --hard 具体id（哈希值）
 - git checkout 切换分支
@@ -315,7 +315,9 @@ git分支与主干合并操作
 
 4 (feature) git merge master
 
-5 解冲突 6 (feature) git commit #
+5 解冲突 
+
+6 (feature) git commit #
 
 查看分支：git branch
 
