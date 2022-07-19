@@ -290,4 +290,9 @@
 	- window.onresize 缩放事件
 - 构造函数 Function() 
 	- prototype属性 属性值为一个对象 称为原型对象
+	- constructor属性，指向构造函数自身
+	- instanceof 检测构造函数的实例对象
+	- in 判断对象上有无某属性
+	- hasOwnProperty()检测某对象自身上是否有某属性
+- 原型链关系
 	- 
