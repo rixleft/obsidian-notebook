@@ -413,6 +413,8 @@ console.log('end');
 </script>  
 </body>  
 </html>
+```
+
 
 ### 1.9 事件推送
 
@@ -431,7 +433,7 @@ path: 接口（向服务器端发送请求的地址）
 特点：与Worker函数一样都需要服务器环境
 
 我们通过es的onmessage事件监听服务器端返回的数据。
-
+```js
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
@@ -458,6 +460,8 @@ es.onmessage = function(e) {
 </script>  
 </body>  
 </html>
+```
+
 
 ## 二、Canvas
 
@@ -538,7 +542,7 @@ lineWidth: 用于改变线宽
 lineTo 绘制线
 
 moveTo 移动绘制的起点
-
+```js
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
@@ -647,6 +651,7 @@ ctx.fillText('hello', 100, 100)
 </script>  
 </body>  
 </html>
+```
 
 ### 2.3 绘制图片
 
@@ -695,7 +700,7 @@ canvas_y: 将截取后的图片放在canvas中的y点
 canvas_w: 将截取后的图片放在canvas中的宽
 
 canvas_h: 将截取后的图片放在canvas中的高
-
+```js
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
@@ -740,3 +745,4 @@ img.onload = function() {
 </script>  
 </body>  
 </html>
+```
