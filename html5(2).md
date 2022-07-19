@@ -33,7 +33,7 @@ currentTime 当前时长
 volume 音量（0-1之间的数）
 
 muted 静音
-
+```js
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
@@ -170,6 +170,8 @@ btn5.onclick = function() {
 </script>  
 </body>  
 </html>
+```
+
 
 ### 1.3 拖拽
 
@@ -192,7 +194,7 @@ ondrop: 丢弃事件。
 注：dargover事件中的默认行为阻止了ondrop事件，ondrop事件默认不能够执行，
 
 所以要给一个元素添加该事件，必须要给该元素添加ondragover事件并阻止默认事件
-
+```js
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
@@ -262,6 +264,8 @@ trash.ondrop = function(e) {
 </script>  
 </body>  
 </html>
+```
+
 
 ### 1.4 服务器
 
