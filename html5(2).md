@@ -344,7 +344,7 @@ path: 要提取出来的js文件
 特点： 需要服务器环境支持
 
 当页面打开的时候直接可以看到，在额外的线程执行完毕之后，其它语句已经执行
-
+```js
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
@@ -374,6 +374,8 @@ console.log('end');
 </script>  
 </body>  
 </html>
+```
+
 
 ### 1.8 **传递消息**
 
@@ -384,7 +386,7 @@ postMessage
 onmessage
 
 该方法用于主线程接收额外的线程推送过来的信息 只能传递一个参数，多个参数可以放在数组或者对象中。 具体的数据在事件对象中的data属性中
-
+```js
 <!DOCTYPE html>  
 <html lang="en">  
 <head>  
