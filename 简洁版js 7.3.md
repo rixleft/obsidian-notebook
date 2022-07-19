@@ -295,4 +295,15 @@
 	- in 判断对象上有无某属性
 	- hasOwnProperty()检测某对象自身上是否有某属性
 - 原型链关系
-	- 
+	- 安全类
+- 内置构造函数
+	- Object()
+	- Array()
+	- Function()
+	- String()
+	- Number()
+	- Boolean()
+	- RegExp()
+	- Error()
+	- Date()
+	- new RegExp(regStr,letter)
