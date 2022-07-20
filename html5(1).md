@@ -112,11 +112,15 @@ key: 要删除的数据名称
 //     console.log('test');  
 // }  
 // console.log(test.toString());  
+例题：console.log(({}+{}).length)的结果？
+两个空对象相加，是字符串连接，字符串在连接时默认会调用相应的toString()方法，
+({}).toString() 得到"[object Object]" 长度为15，那么两个相加为30，
+相当于 ({}.toString()+{}.toString()).length。
+也就是 "[object Object][object Object]"，求得这个字符串长度为30。
 </script>  
 </body>  
 </html>
 ```
-
 
 ### 2.2 会话存储
 
