@@ -1,2 +1,9 @@
 - Business of today
-	- moon
+	- Date: [[{{date}}]]
+	- mood:
+	- weather:
+	- idea:
+- Content
+	- 
+- Summary
+	- 
