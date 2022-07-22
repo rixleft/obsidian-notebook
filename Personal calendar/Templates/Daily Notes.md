@@ -3,6 +3,7 @@
 	- mood:
 	- weather:
 	- idea:
+	- Tag:
 - Content
 	- 
 - Summary
