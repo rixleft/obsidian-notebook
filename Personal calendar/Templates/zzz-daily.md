@@ -19,8 +19,6 @@ modification date: <% modificationDate %>
 
 << [[<% before_date %>]] | [[<% after_date %>]] >>
 
-<% tp.web.daily_quote() %>
-<% tp.web.random_picture("200x200", "landscape,water") %>
 
 #### Business of today
 -  ==Content==
