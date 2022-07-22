@@ -28,11 +28,11 @@ modification date: <% modificationDate %>
 	- [ ] Weather:
 	- [ ] Review and reflection:
 	- [ ] Uncompleted transaction:
-	- [ ] 写下需要思考的东西
-	- [ ] 忽略人际关系冲突
-	- [ ] 不开会/少开会
+	- [ ] Tag:
 	- [ ] Idea:
-- 工作效率
+- Work
+	- 
+- Summary
 	- [[会议检查清单]]
 	- [[Workbench]]
 	
@@ -42,6 +42,6 @@ modification date: <% modificationDate %>
 #### 间歇日记
 
 <%*
-await tp.file.move("/Daily/" + titleName)
+await tp.file.move("/Personal calender/Daily/" + titleName)
 tp.file.cursor()
 -%>
