@@ -1,16 +1,16 @@
 <%*
 let today = tp.date.now("YYYY-MM-DD")
 let inputDate = await tp.system.prompt("输入示例："+today,today)
-titleName = window.moment(inputDate, "YYYY-MM-DD", true).format("YYYY-MM-DD-ddd")
+titleName = window.moment(inputDate, "YYYY-MM-DD", true).format("YYYY-MM-DD_ddd")
 
 if(tp.file.exists("/Daily/"+titleName)){
 		window.alert("该日期对应的文件已经存在，请重试！")
 		return;
 }
 
-before_date = window.moment(inputDate, "YYYY-MM-DD", true).add(-1,"days").format("YYYY-MM-DD-ddd")
+before_date = window.moment(inputDate, "YYYY-MM-DD", true).add(-1,"days").format("YYYY-MM-DD_ddd")
 
-after_date = window.moment(inputDate, "YYYY-MM-DD", true).add(1,"days").format("YYYY-MM-DD-ddd")
+after_date = window.moment(inputDate, "YYYY-MM-DD", true).add(1,"days").format("YYYY-MM-DD_ddd")
 
 let createTime = tp.file.creation_date()
 let modificationDate = tp.file.last_modified_date("dddd Do MMMM YYYY HH:mm:ss")
