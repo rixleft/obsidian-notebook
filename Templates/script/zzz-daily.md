@@ -20,18 +20,18 @@ modification date: <% modificationDate %>
 << [[<% before_date %>]] | [[<% after_date %>]] >>
 
 <% tp.web.daily_quote() %>
-<% tp.web.random_picture("200x200", "landscape,water") %>
 
-#### 重点关注
--  ==早上 7 件事==
-	- [ ] 花点时间回顾和反思
-	- [ ] 查看「反向链接」和「工作待办」
-	- [ ] 扫一眼邮件
-	- [ ] 确定最困难的工作，拆分成多个小任务
-	- [ ] 写下需要思考的东西
-	- [ ] 忽略人际关系冲突
-	- [ ] 不开会/少开会
-- 工作效率
+#### Business of today
+-  ==Content==
+	- [ ] Mood:
+	- [ ] Weather:
+	- [ ] Uncompleted Transaction:
+	- [ ] Review and Reflection:
+	- [ ] Tag:
+	- [ ] Idea:
+- Work
+	- 
+- Summary
 	- [[会议检查清单]]
 	- [[Workbench]]
 	
