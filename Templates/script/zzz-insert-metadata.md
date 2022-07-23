@@ -20,27 +20,3 @@ modification date: <% modificationDate %>
 << [[<% before_date %>]] | [[<% after_date %>]] >>
 
 <% tp.web.daily_quote() %>
-
-#### Business of today
--  ==Content==
-	- [ ] Mood:
-	- [ ] Weather:
-	- [ ] Uncompleted Transaction:
-	- [ ] Review and Reflection:
-	- [ ] Tag:
-	- [ ] Idea:
-- Work
-	- 
-- Summary
-	- [[会议检查清单]]
-	- [[Workbench]]
-	
-#### 阅读笔记 & 会议纪要
-通常记录一些需要技术阅读的内容
-
-#### 间歇日记
-
-<%*
-await tp.file.move("/Daily/" + titleName)
-tp.file.cursor()
--%>
