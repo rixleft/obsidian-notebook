@@ -30,7 +30,7 @@ modification date: <% modificationDate %>
 	- [ ] Tag:
 	- [ ] Idea:
 - Work
-	- 
+	- [ ] 
 - Summary
 	- [[会议检查清单]]
 	- [[Workbench]]
