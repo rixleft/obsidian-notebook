@@ -5,10 +5,11 @@
 `块引用：[[Note Name ^]]`
 
 
-[玩转 Obsidian 05：如何进行阅读及摘要 - 少数派](https://sspai.com/post/68492) [[Obsidian-Highlights]]
+[玩转 Obsidian 05：如何进行阅读及摘要 - 少数派](https://sspai.com/post/68492) 
+Obsidian-Highlights
 chrome 插件 Roam-highlighter
 
-- **[[快捷键设置]]**
+- **快捷键设置**
     - Alt + X：显示或隐藏窗口，有时候如果觉得 Roam-highlighter 窗口阻挡视线可以隐藏，通常情况下会让它显示，方便一遍高亮一遍观察「样式」，如果出现问题也可以随时修复。
     - CMD + X : (Windows 下是 Ctrl + X) 将「原文区」已经选中的内容进行高亮；或者对选中的内容取消高亮。通常我们打开 Roam-highlighter 窗口然后一遍选择需要摘录的内容一边按下该快捷键进行「摘录」。
     - Alt + Click :当鼠标放在「原文区」已经高亮的区域时，按下会移除该区域高亮设置。
@@ -18,7 +19,8 @@ chrome 插件 Roam-highlighter
     - ALT + Z ：等同于「Double-Click」，在「原文区」已经高亮的内容行中，选中一段词语后按下快捷键，该词会被设置成「双向链接」形式。
 
 
-[玩转 Obsidian 06：如何用渐进式总结笔记，把知识交给未来的自己 - 少数派](https://sspai.com/post/69025) [[Obsidian-Highlights]]
+[玩转 Obsidian 06：如何用渐进式总结笔记，把知识交给未来的自己 - 少数派](https://sspai.com/post/69025)
+Obsidian-Highlights
 
 - 总结一下，我们要设计一款「传递给未来的自己」的笔记系统要满足如下条件：
     - 销售思维：即我们设计笔记要有销售思维，想方设法引起未来的自己注意，并提供出未来的自己感兴趣的内容。
@@ -27,10 +29,14 @@ chrome 插件 Roam-highlighter
 
 
 
-[玩转 Obsidian 07 ：自动化「间歇式日记」 - 少数派](https://sspai.com/post/69982) [[Obsidian-Highlights]]
+[玩转 Obsidian 07 ：自动化「间歇式日记」 - 少数派](https://sspai.com/post/69982) 
+Obsidian-Highlights
 
-- [[Templater]]
+- **Templater**
     - 设置脚本存放目录：指定脚本存放文件夹，后续通过「快捷键」或「快捷入口」等方式执行脚本的时候，会默认从设定的「文件夹」查找相关「脚本文件」。
     - 打开「语法高亮」开关：打开后我们在编辑 Templater 的脚本文件时会「自动高亮」相关「语法」。
     - 打开「自动跳转光标」开关：当我们使用 Templater 创建新笔记时，可以自动将「光标」跳转到这个笔记，方便我们继续操作。
      - 打开「监听文件创建」开关：建议默认打开此开关，他会让我们兼容更多 Obsidian 中的插件例如（Review/calendar)
+
+- [[少数派 - 高效工作，品质生活]]
+     - [少数派 - 高效工作，品质生活](https://sspai.com/post/69982)     

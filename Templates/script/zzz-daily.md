@@ -32,8 +32,8 @@ modification date: <% modificationDate %>
 - Work
 	- [ ] 
 - Summary
-	- [[会议检查清单]]
-	- [[Workbench]]
+	- 
+	- 
 	
 #### 阅读笔记 & 会议纪要
 通常记录一些需要技术阅读的内容
