@@ -1,6 +1,5 @@
 <%*
 let today = tp.date.now("YYYY-MM-DD")
-console.log(today)
 let inputDate = await tp.system.prompt("输入示例："+today,today)
 titleName = window.moment(inputDate, "YYYY-MM-DD", true).format("YYYY-MM-DD_ddd")
 
