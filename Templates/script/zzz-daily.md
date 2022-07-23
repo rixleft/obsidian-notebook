@@ -7,7 +7,7 @@ before_date = window.moment(inputDate, "YYYY-MM-DD", true).add(-1,"days").format
 
 after_date = window.moment(inputDate, "YYYY-MM-DD", true).add(1,"days").format("YYYY-MM-DD_ddd")
 
-let createTime = tp.file.creation_date()
+let createTime = await tp.file.creation_date()
 let modificationDate = tp.file.last_modified_date("dddd Do MMMM YYYY HH:mm:ss")
 -%>
 
